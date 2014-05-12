@@ -1,0 +1,37 @@
+@import 'variables'
+@import 'mixins'
+
+.marquee
+    &.home
+        @include marquee(400px)
+
+    &.inner-page
+        @include marquee(400px)
+
+    &.blog
+        @include marquee(400px)
+
+.home-marquee
+    @include marquee(400px)
+
+.marquee-photo-credit
+    position: absolute
+    bottom: 0
+    right: 0
+    background-color: rgba(49,55,61,.25)
+    font-size: 13px
+    font-family: $freight
+    padding: .85em 1em
+    color: #fff
+    @include transition
+
+    &:hover
+        background-color: rgba(49,55,61,1)
+
+        a
+            color: #ee7b7c
+
+    a
+        color: #fd7071
+        text-decoration: none
+        @include transition
