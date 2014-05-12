@@ -1,4 +1,4 @@
 simpsn.com
 ==========
 
-All the things simp.sn related
+All the things related to simpsn.com
