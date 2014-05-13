@@ -1,0 +1,78 @@
+/* line 5, ../../sass/all/structure.sass */
+.body-content {
+  display: block;
+  outline: 0;
+  position: absolute;
+  left: 155px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: white;
+  -webkit-overflow-scrolling: touch; }
+  @media (max-width: 1000px) {
+    /* line 5, ../../sass/all/structure.sass */
+    .body-content {
+      position: absolute;
+      left: 0;
+      top: 100px; } }
+
+/* line 24, ../../sass/all/structure.sass */
+.content a, .wide-content a, .left-content-bottom a {
+  color: #fd7071;
+  text-decoration: none; }
+  /* line 28, ../../sass/all/structure.sass */
+  .content a:hover, .wide-content a:hover, .left-content-bottom a:hover {
+    text-decoration: none;
+    border-bottom: 1px dotted #e26c6d; }
+
+/* line 32, ../../sass/all/structure.sass */
+.content {
+  padding: 3em 0 0 0;
+  position: relative;
+  width: 60%;
+  max-width: 750px;
+  margin: 0 auto; }
+  @media (max-width: 1000px) {
+    /* line 32, ../../sass/all/structure.sass */
+    .content {
+      width: 70%; } }
+  /* line 42, ../../sass/all/structure.sass */
+  .content.card {
+    background: #f3f6f7;
+    padding: 0 0 3em 0;
+    margin-top: 2em;
+    margin-bottom: 3em; }
+    /* line 48, ../../sass/all/structure.sass */
+    .content.card p {
+      padding: 0 3em; }
+    /* line 51, ../../sass/all/structure.sass */
+    .content.card img {
+      max-width: 100%; }
+  /* line 54, ../../sass/all/structure.sass */
+  .content.last {
+    margin-bottom: 4em; }
+  /* line 57, ../../sass/all/structure.sass */
+  .content.blog {
+    padding: 0; }
+    /* line 60, ../../sass/all/structure.sass */
+    .content.blog.first {
+      padding: 3em 0 3em 0; }
+  /* line 63, ../../sass/all/structure.sass */
+  .content a.image:hover {
+    border-bottom: 0; }
+
+/* line 67, ../../sass/all/structure.sass */
+.wide-content {
+  padding: 3em 0 0 0;
+  position: relative;
+  width: 80%;
+  max-width: 850px;
+  margin: 0 auto; }
+
+/* line 74, ../../sass/all/structure.sass */
+.blog-content {
+  position: relative;
+  width: 70%;
+  background-color: #999999;
+  height: 600px;
+  left: 10%; }

@@ -1,4 +1,4 @@
-theme_name: Acadia
+theme_name: Simpson
 
 favorite_sites:
   -
@@ -11,8 +11,8 @@ favorite_sites:
     name: Statamic
     url: http://statamic.com
     
-site_twitter: statamic
+site_twitter: simpson
 
 # used in the feed
 site_language: en
-contact_email: you@example.com
+contact_email: david@simpsn.com

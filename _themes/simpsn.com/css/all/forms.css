@@ -1,0 +1,41 @@
+#form {
+  background-color: #f3f6f7;
+  padding: 1em 2em 2em 2em;
+  margin: 0 0 5em 0; }
+  #form input::-webkit-input-placeholder {
+    color: #dddddd; }
+  #form input:-moz-placeholder {
+    color: #dddddd; }
+  #form input::-moz-placeholder {
+    color: #dddddd; }
+  #form input:-ms-input-placeholder {
+    color: #dddddd; }
+  #form label {
+    display: none; }
+  #form .hs-form-field {
+    padding: 0.45em 0; }
+  #form .hs_notes {
+    padding: 0.55em 0; }
+  #form textarea, #form input[type="text"], #form input[type="password"], #form input[type="datetime"], #form input[type="datetime-local"], #form input[type="date"], #form input[type="month"], #form input[type="time"], #form input[type="week"], #form input[type="number"], #form input[type="email"], #form input[type="url"], #form input[type="search"], #form input[type="tel"], #form input[type="color"] select {
+    font-size: 1.5em;
+    font-family: "freight-sans-pro", helvetica, arial;
+    border: 0; }
+  #form input[type="button"], #form input[type="submit"], #form input[type="reset"], #form input[type="file"]::-webkit-file-upload-button, #form button {
+    background-color: #d35a5b;
+    border: 0;
+    font-family: "freight-sans-pro", helvetica, arial;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 0.5em 1em;
+    letter-spacing: 1px; }
+  #form input[type="file"] {
+    align-items: baseline;
+    color: inherit;
+    text-align: start;
+    width: 100%;
+    margin-left: 2px; }
+  #form textarea {
+    height: 200px; }
+  #form fieldset.form-columns-1 .hs-input {
+    width: 100%; }
