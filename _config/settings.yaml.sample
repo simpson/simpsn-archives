@@ -84,6 +84,9 @@ _allow_php: false
 #  - strict (YAML 1.2)
 _yaml_mode: loose
 
+# Choose the markdown parser to use (standard | parsedown)
+_markdown_parser: parsedown
+
 # Choose whether you want your content (e.g. Markdown, Textile...) or your tags parsed first
 _parse_order:
   - content
@@ -132,6 +135,9 @@ _log_file_path: _logs
 
 # Prefixes your log file, helpful if you're collecting multiple Statamic site logs in one directory
 _log_file_prefix: site
+  
+# Will show some debugging information about your page at the bottom of each page
+_display_debug_panel: false
 
 
 ###########################################################################################
@@ -140,7 +146,7 @@ _log_file_prefix: site
 #
 ###########################################################################################
 
-# Enable control panel (make sure you your config/system folders aren't web accessable)
+# Enable control panel (make sure you your config/system folders aren't web accessible)
 _admin_enabled: true
 
 # Change the folder name for your admin directory.

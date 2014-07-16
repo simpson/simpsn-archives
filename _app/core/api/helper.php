@@ -115,6 +115,17 @@ class Helper
         return array_map( 'self::objectToArray', $object);
     }
 
+    public static function prettifyZeroIndexes($array)
+    {
+        if (array_values($array) === $array) {
+            $new_array = array_values($array);
+
+            return array_combine($new_array, array_map('Slug::prettify', $new_array));
+        }
+
+        return $array;
+    }
+
 
     /**
      * Explodes options into an array
@@ -323,6 +334,7 @@ class Helper
      */
     public static function makeHash()
     {
+        $hash = Debug::markStart('math', 'hashing');
         $args = func_get_args();
         $data = array();
         
@@ -338,31 +350,39 @@ class Helper
         }
         
         // return a hash of the flattened $data array
-        return md5(join('%', $data));
+        $result = md5(join('%', $data));
+        Debug::markEnd($hash);
+        
+        return $result;
     }
     
     public static function strrpos_count($haystack, $needle, $instance=0)
     {
-//        r('---');
-//        r($haystack);
-//        r($instance);
-        
         do {
             // get the last occurrence in the current haystack
             $last = strrpos($haystack, $needle);
-//            d($last);
             
             if ($last === false) {
                 return false;
             }
             
-            $haystack = substr($haystack, 0, $last);
-//            d($haystack);
-            
+            $haystack = substr($haystack, 0, $last);            
             $instance--;
         } while ($instance >= 0);
         
-//        d('out: ' . $last);
         return $last;
+    }
+
+    /**
+     * Convert a value to camel case.
+     *
+     * @param  string  $value
+     * @return string
+     */
+    public static function camelCase($value)
+    {
+        $value = ucwords(str_replace(array('-', '_'), ' ', $value));
+
+        return lcfirst(str_replace(' ', '', $value));
     }
 }

@@ -105,7 +105,7 @@ class Fieldtype_grid extends Fieldtype
             $default  = array_get($cell_field_config, 'default', '');
             $name     = $this->field . '][' . $index . '][' . $cell_field_name;
 
-            $row .= "<td class='cell-{$celltype}' data-default='{$default}'>" . Fieldtype::render_fieldtype($celltype, $name, $cell_field_config, $default) . "</td>";
+            $row .= "<td class='cell-{$celltype}' data-default='{$default}'>" . Fieldtype::render_fieldtype($celltype, $name, $cell_field_config, $default, null, '[yaml]', 'rename_me') . "</td>";
         }
         $row .= "</tr>\n";
 

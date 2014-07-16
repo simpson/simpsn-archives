@@ -31,6 +31,7 @@
       <input type="hidden" name="page[original_datestamp]" value="<?php print $original_datestamp ?>" />
       <input type="hidden" name="page[original_timestamp]" value="<?php print $original_timestamp ?>" />
       <input type="hidden" name="page[original_numeric]" value="<?php print $original_numeric ?>" />
+      <input type="hidden" name="return" value="<?php print $return ?>" />
 
       <?php if (isset($new)): ?>
         <input type="hidden" name="page[new]" value="1" />

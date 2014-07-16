@@ -23,12 +23,13 @@ class Tasks_protect extends Tasks
      * Does this user have a correct password for a given $url?
      * 
      * @param string  $url  URL to check password for
+     * @param array  $allowed  Override URL list with given list of allowed passwords
      * @return bool
      */
-    public function hasPassword($url)
+    public function hasPassword($url, $allowed=array())
     {
         $passwords  = $this->getUserPasswords($url);
-        $allowed    = $this->getAllowedPasswords($url);
+        $allowed    = (is_array($allowed) && count($allowed)) ? $allowed : $this->getAllowedPasswords($url);
         
         // no allowed passwords? get out
         if (empty($allowed)) {

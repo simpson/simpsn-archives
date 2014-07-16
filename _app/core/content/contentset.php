@@ -78,6 +78,7 @@ class ContentSet
      */
     public function filter($filters)
     {
+        $hash = Debug::markStart('content', 'filtering');
         $filters = Helper::ensureArray($filters);
 
         // nothing to filter, abort
@@ -93,6 +94,7 @@ class ContentSet
         $folders        = null;
         $conditions     = null;
         $located        = false;
+        $where          = null;
 
 
         // standardize filters
@@ -108,7 +110,8 @@ class ContentSet
             'type'        => (isset($given_filters['type']))           ? strtolower($given_filters['type']) : null,
             'folders'     => (isset($given_filters['folders']))        ? $given_filters['folders']          : null,
             'conditions'  => (isset($given_filters['conditions']))     ? $given_filters['conditions']       : null,
-            'located'     => (isset($given_filters['located']))        ? $given_filters['located']          : null
+            'located'     => (isset($given_filters['located']))        ? $given_filters['located']          : null,
+            'where'       => (isset($given_filters['where']))          ? $given_filters['where']            : null
         );
 
 
@@ -127,7 +130,7 @@ class ContentSet
         }
 
         if ($filters['show_past'] === false && (!$since_date || $since_date < time())) {
-            $since_date = time();
+            $since_date = (Config::getEntryTimestamps()) ? time() : Date::resolve("today midnight");
         }
 
         if ($filters['until']) {
@@ -135,7 +138,7 @@ class ContentSet
         }
 
         if ($filters['show_future'] === false && (!$until_date || $until_date > time())) {
-            $until_date = time();
+            $until_date = (Config::getEntryTimestamps()) ? time() : Date::resolve("tomorrow midnight") - 1;
         }
 
         if ($filters['type'] === "entries" || $filters['type'] === "pages") {
@@ -152,6 +155,10 @@ class ContentSet
 
         if ($filters['located']) {
             $located = true;
+        }
+        
+        if ($filters['where']) {
+            $where = $filters['where'];
         }
         
         
@@ -243,10 +250,13 @@ class ContentSet
 
             // conditions
             if ($conditions) {
-                $case_sensitive_taxonomies = Config::getTaxonomyCaseSensitive();
+                $case_sensitive_taxonomies  = Config::getTaxonomyCaseSensitive();
 
                 foreach ($conditions as $field => $instructions) {
-                    try {
+                    $optional = (substr($field, -1, 1) == '?');
+                    $field    = ($optional) ? trim(substr($field, 0, -1)) : $field;
+                    
+                    try {                        
                         // are we looking for existence?
                         if ($instructions['kind'] === "existence") {
                             if ($instructions['type'] === "has") {
@@ -295,64 +305,123 @@ class ContentSet
                                     $values = false;
                                 }
                             }
+                            
+                            // convert date-like statements to timestamps for qualitative comparisons (not equals)
+                            if (in_array($instructions['type'], array('greater than or equal to', 'greater than', 'less than or equal to', 'less than'))) {
+                                if (!is_array($field) && !is_numeric($field) && Date::resolve($field) !== false) {
+                                    $field = Date::resolve($field);
+                                }
+                                
+                                if (!is_array($values) && !is_numeric($values) && Date::resolve($values) !== false) {
+                                    $values = Date::resolve($values);
+                                }
+                            }
 
                             // equal comparisons
                             if ($instructions['type'] == "equal") {
                                 // if this isn't set, it's not equal
                                 if (!$field) {
-                                    throw new Exception("Does not fit condition");
+                                    throw new Exception("Field not set", 1);
                                 }
 
                                 if (!is_array($field)) {
                                     if ($field != $values) {
-                                        throw new Exception("Does not fit condition");
+                                        throw new Exception("Does not fit condition", 0);
                                     }
                                 } elseif (!in_array($values, $field)) {
-                                    throw new Exception("Does not fit condition");
+                                    throw new Exception("Does not fit condition", 0);
                                 }
                                 
                             // greater than or equal to comparisons
                             } elseif ($instructions['type'] == "greater than or equal to") {
                                 // if this isn't set, it's not greater than or equal to
                                 if (!$field) {
-                                    throw new Exception("Does not fit condition");
+                                    throw new Exception("Field not set", 1);
+                                }
+
+                                if (is_array($field) || is_array($values)) {
+                                    throw new Exception("Does not fit condition", 0);
+                                }
+
+                                if (!is_numeric($field) && Date::resolve($field) !== false) {
+                                    $field = Date::resolve($field);
+                                }
+
+                                if (!is_numeric($values) && Date::resolve($values) !== false) {
+                                    $values = Date::resolve($values);
                                 }
                                 
-                                if (is_array($field) || is_array($values) || !is_numeric($field) || !is_numeric($values) || $field < $values) {
-                                    throw new Exception("Does not fit condition");
+                                if (!is_numeric($field) || !is_numeric($values) || $this->toNumber($field) < $this->toNumber($values)) {
+                                    throw new Exception("Does not fit condition", 0);
                                 }
                                 
                             // greater than to comparisons
                             } elseif ($instructions['type'] == "greater than") {
                                 // if this isn't set, it's not less than
                                 if (!$field) {
-                                    throw new Exception("Does not fit condition");
+                                    throw new Exception("Field not set", 1);
                                 }
                                 
-                                if (is_array($field) || is_array($values) || !is_numeric($field) || !is_numeric($values) || $field <= $values) {
-                                    throw new Exception("Does not fit condition");
+                                if (is_array($field) || is_array($values)) {
+                                    throw new Exception("Does not fit condition", 0);
+                                }
+                                
+                                if (!is_numeric($field) && Date::resolve($field) !== false) {
+                                    $field = Date::resolve($field);
+                                }
+                                
+                                if (!is_numeric($values) && Date::resolve($values) !== false) {
+                                    $values = Date::resolve($values);
+                                }
+                                
+                                if (!is_numeric($field) || !is_numeric($values) || $this->toNumber($field) <= $this->toNumber($values)) {
+                                    throw new Exception("Does not fit condition", 0);
                                 }
                                 
                             // less than or equal to comparisons
                             } elseif ($instructions['type'] == "less than or equal to") {
                                 // if this isn't set, it's not less than or equal to
                                 if (!$field) {
-                                    throw new Exception("Does not fit condition");
+                                    throw new Exception("Field not set", 1);
+                                }
+
+                                if (is_array($field) || is_array($values)) {
+                                    throw new Exception("Does not fit condition", 0);
+                                }
+
+                                if (!is_numeric($field) && Date::resolve($field) !== false) {
+                                    $field = Date::resolve($field);
+                                }
+
+                                if (!is_numeric($values) && Date::resolve($values) !== false) {
+                                    $values = Date::resolve($values);
                                 }
                                 
-                                if (is_array($field) || is_array($values) || !is_numeric($field) || !is_numeric($values) || $field > $values) {
-                                    throw new Exception("Does not fit condition");
+                                if (!is_numeric($field) || !is_numeric($values) || $this->toNumber($field) > $this->toNumber($values)) {
+                                    throw new Exception("Does not fit condition", 0);
                                 }
                                 
                             // less than to comparisons
                             } elseif ($instructions['type'] == "less than") {
                                 // if this isn't set, it's not less than
                                 if (!$field) {
-                                    throw new Exception("Does not fit condition");
+                                    throw new Exception("Field not set", 1);
+                                }
+
+                                if (is_array($field) || is_array($values)) {
+                                    throw new Exception("Does not fit condition", 0);
+                                }
+
+                                if (!is_numeric($field) && Date::resolve($field) !== false) {
+                                    $field = Date::resolve($field);
+                                }
+
+                                if (!is_numeric($values) && Date::resolve($values) !== false) {
+                                    $values = Date::resolve($values);
                                 }
                                 
-                                if (is_array($field) || is_array($values) || !is_numeric($field) || !is_numeric($values) || $field >= $values) {
-                                    throw new Exception("Does not fit condition");
+                                if (!is_numeric($field) || !is_numeric($values) || $this->toNumber($field) >= $this->toNumber($values)) {
+                                    throw new Exception("Does not fit condition", 0);
                                 }
 
                             // not-equal comparisons
@@ -364,28 +433,36 @@ class ContentSet
 
                                 if (!is_array($field)) {
                                     if ($field == $values) {
-                                        throw new Exception("Does not fit condition");
+                                        throw new Exception("Does not fit condition", 0);
                                     }
                                 } elseif (in_array($values, $field)) {
-                                    throw new Exception("Does not fit condition");
+                                    throw new Exception("Does not fit condition", 0);
                                 }
 
                             // contains array comparisons
                             } elseif ($instructions['type'] == "in") {
-                                if (!$field || !count(array_intersect(Helper::ensureArray($field), $values))) {
-                                    throw new Exception("Does not fit condition");
+                                if (!$field) {
+                                    throw new Exception("Field not set", 1);
+                                }
+                                
+                                if (!count(array_intersect(Helper::ensureArray($field), $values))) {
+                                    throw new Exception("Does not fit condition", 0);
                                 }
                                 
                             // doesn't contain array comparisons
                             } elseif ($instructions['type'] == "not in") {
-                                if (!$field || count(array_intersect(Helper::ensureArray($field), $values))) {
-                                    throw new Exception("Does not fit condition");
+                                if (!$field) {
+                                    throw new Exception("Field not set", 1);
+                                }
+                                
+                                if (count(array_intersect(Helper::ensureArray($field), $values))) {
+                                    throw new Exception("Does not fit condition", 0);
                                 }           
                                 
                             // contains contains-text comparisons
                             } elseif ($instructions['type'] == 'contains text') {
                                 if (!$field) {
-                                    throw new Exception('Does not fit condition');
+                                    throw new Exception("Field not set", 1);
                                 }
                                 
                                 $field = Helper::ensureArray($field);
@@ -415,16 +492,23 @@ class ContentSet
                                 }
 
                                 if (!$found) {
-                                    throw new Exception("Does not fit condition");
+                                    throw new Exception("Does not fit condition", 0);
                                 }
                             }
 
                         // we don't know what this is
                         } else {
-                            throw new Exception("Unknown kind of condition");
+                            throw new Exception("Unknown kind of condition", -1);
                         }
 
                     } catch (Exception $e) {
+                        if ($optional && $e->getCode() === 1) {
+                            // we were only making the comparison if the field exists,
+                            // otherwise, this is ok
+                            continue;
+                        }
+                        
+                        // this was not an optional field, and something went wrong
                         unset($this->content[$key]);
                         continue;
                     }
@@ -437,6 +521,16 @@ class ContentSet
                 continue;
             }
         }
+        
+        Debug::markEnd($hash);
+    }
+    
+    private function toNumber($value) {
+        if (!is_numeric($value)) {
+            return false;
+        }
+        
+        return (strpos($value, '.') !== false) ? (float) $value : (int) $value;
     }
 
 
@@ -449,6 +543,8 @@ class ContentSet
      */
     public function sort($field="order_key", $direction=null)
     {
+        $hash = Debug::markStart('content', 'sorting');
+        
         // no content, abort
         if (!count($this->content)) {
             return;
@@ -523,6 +619,8 @@ class ContentSet
         if (Helper::pick($direction, "asc") == "desc") {
             $this->content = array_reverse($this->content);
         }
+        
+        Debug::markEnd($hash);
     }
 
 
@@ -535,11 +633,13 @@ class ContentSet
      */
     public function limit($limit=null, $offset=0)
     {
+        $hash = Debug::markStart('content', 'limiting');
         if (is_null($limit) && $offset === 0) {
             return;
         }
 
         $this->content = array_slice($this->content, $offset, $limit, true);
+        Debug::markEnd($hash);
     }
 
 
@@ -578,6 +678,7 @@ class ContentSet
      */
     public function prepare($parse_content=true, $override_flag=false)
     {
+        $hash = Debug::markStart('content', 'preparing');
         if ($this->prepared && !$override_flag) {
             return;
         }
@@ -595,26 +696,33 @@ class ContentSet
 
             // parse full content if that's been requested and is needed
             if ($parse_content && isset($item['_file']) && (!$this->content_parsed || $override_flag)) {
-                if (isset(self::$known_content[$item['url']])) {
-                    // we've already parsed this once, let's use what we know
-                    $this->content[$key]['content_raw'] = self::$known_content[$item['url']]['content_raw'];
-                    $this->content[$key]['content']     = self::$known_content[$item['url']]['content'];
-                } else {
-                    // first time parsing, let's figure stuff out
-                    $raw_file = substr(File::get($item['_file']), 3);
-                    $divide = strpos($raw_file, "\n---");
+                // check to see if we know about this content
+                if (!isset(self::$known_content[$item['url']])) {
+                    // we haven't seen this item before in this page-load
+                    // retrieve this content
+                    $content_file  = (isset($item['_file'])) ? $item['_file'] : null;
+                    $item_content  = array('content_raw' => '', 'content' => '');
 
-                    $this->content[$key]['content_raw']  = trim(substr($raw_file, $divide + 4));
-                    $this->content[$key]['content']      = Content::parse($this->content[$key]['content_raw'], $item);
-                    
-                    // but let's also save this for later
-                    self::$known_content[$item['url']] = array(
-                        'content_raw' => $this->content[$key]['content_raw'],
-                        'content' => $this->content[$key]['content']
-                    );
+                    // content file exists
+                    if ($content_file && File::exists($content_file)) {
+                        // make this
+                        $raw_file  = substr(File::get($content_file), 3);
+                        $divide    = strpos($raw_file, "\n---");
+
+                        $item_content['content_raw']  = trim(substr($raw_file, $divide + 4));
+                        $item_content['content']      = Content::parse($item_content['content_raw'], $item);
+                    }
+
+                    // update the cache
+                    self::$known_content[$item['url']] = $item_content;
                 }
+
+                // pull the content from the known-content cache
+                $this->content[$key]['content_raw'] = self::$known_content[$item['url']]['content_raw'];
+                $this->content[$key]['content']     = self::$known_content[$item['url']]['content'];
             }
 
+            // iterate the counter
             $i++;
         }
 
@@ -622,6 +730,8 @@ class ContentSet
         if ($parse_content) {
             $this->content_parsed = true;
         }
+        
+        Debug::markEnd($hash);
     }
 
 
@@ -633,6 +743,8 @@ class ContentSet
      */
     public function supplement($context=array())
     {
+        $hash = Debug::markStart('content', 'supplementing');
+        
         if ($this->supplemented) {
             return;
         }
@@ -767,6 +879,8 @@ class ContentSet
                 $this->content[$content_key] = $data;
             }
         }
+        
+        Debug::markEnd($hash);
     }
 
 

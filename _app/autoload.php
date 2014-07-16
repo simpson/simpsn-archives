@@ -1,10 +1,18 @@
 <?php
 
-const STATAMIC_VERSION = '1.7.8';
+// start measuring
+define("STATAMIC_START", microtime(true));
+
+global $is_debuggable_route;
+$is_debuggable_route = false;
+
+const STATAMIC_VERSION = '1.8.1';
 const APP_PATH = __DIR__;
 
 // handle the PHP development server
 define("ENVIRONMENT_PATH_PREFIX", (php_sapi_name() === "cli-server") ? "index.php" : "");
+
+
 
 
 // setting this now so that we can do things before the configurations are fully loaded
@@ -45,7 +53,9 @@ $packages = array(
   'Stampie',
   'Symfony',
   'Whoops',
-  'Zeuxisoo'
+  'Zeuxisoo',
+  'erusev',
+  'Propel'
 );
 
 foreach ($packages as $package) {
@@ -92,3 +102,6 @@ spl_autoload_register("autoload_statamic");
 if (Addon::getAPI('html_caching')->isEnabled() && Addon::getAPI('html_caching')->isPageCached()) {
     die(Addon::getAPI('html_caching')->getCachedPage());
 }
+
+// mark milestone for debug panel
+Debug::markMilestone('autoloaders ready');

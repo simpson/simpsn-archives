@@ -176,6 +176,7 @@ function autoload_statamic($class) {
         APP_PATH . '/core/api/',
         APP_PATH . '/core/extend/',
         APP_PATH . '/core/content/',
+        APP_PATH . '/core/private_api/',
         APP_PATH . '/core/members/',
         APP_PATH . '/core/',
         APP_PATH . '/core/bundles/',

@@ -134,8 +134,8 @@ class API_protect extends API
             }
         }
     }
-    
-    
+
+
     /**
      * Evaluates a password for a given $url
      * 

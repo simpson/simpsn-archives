@@ -13,7 +13,7 @@
 ###########################################################################################
 
 # Enter your license key
-_license_key: 19a03946-d60c-4c06-b5a7-902750827930
+_license_key:
 
 _language: en
 
@@ -21,13 +21,13 @@ _language: en
 _site_root: /
 
 # Name of your site
-_site_name: Simpsn.com
+_site_name: Another Awesome Statamic Site
 
 # Change the folder name for your content directory
 _content_root: _content
 
 # Used for permalinks
-_site_url: http://simpsn.com
+_site_url: http://statamic.com
 
 # Folder name of your desired theme
 _theme: acadia
@@ -84,6 +84,9 @@ _allow_php: false
 #  - strict (YAML 1.2)
 _yaml_mode: loose
 
+# Choose the markdown parser to use (standard | parsedown)
+_markdown_parser: parsedown
+
 # Choose whether you want your content (e.g. Markdown, Textile...) or your tags parsed first
 _parse_order:
   - content
@@ -134,6 +137,9 @@ _log_file_path: _logs
 
 # Prefixes your log file, helpful if you're collecting multiple Statamic site logs in one directory
 _log_file_prefix: site
+  
+# Will show some debugging information about your page at the bottom of each page
+_display_debug_panel: false
 
 
 ###########################################################################################

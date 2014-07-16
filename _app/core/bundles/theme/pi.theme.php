@@ -127,6 +127,6 @@ class Plugin_theme extends Plugin
         
         $filename = URL::assemble($this->site_root, $file);
 
-        return ($tag) ? '<img src="' . filename . '" ' . $alt . '>' : $filename;
+        return ($tag) ? '<img src="' . $filename . '" ' . $alt . '>' : $filename;
     }
 }

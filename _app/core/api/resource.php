@@ -148,7 +148,7 @@ class Resource
 
         // loop through folders looking for addon
         foreach ($folders as $folder) {
-            if (Folder::exists($folder.$addon) && File::exists($folder.$addon.'/'.$abbr.'.'.$addon.'.php')) {
+            if (Folder::exists(BASE_PATH.'/'.$folder.$addon) && File::exists(BASE_PATH.'/'.$folder.$addon.'/'.$abbr.'.'.$addon.'.php')) {
                 $file = $folder.$addon.'/'.$abbr.'.'.$addon.'.php';
                 break;
             }

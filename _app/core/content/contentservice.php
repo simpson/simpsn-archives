@@ -43,6 +43,21 @@ class ContentService
 
 
     /**
+     * Reset the cached caches
+     *
+     * @return void
+     */
+    public static function resetCaches()
+    {
+        self::$cache = null;
+        self::$structure = null;
+        self::$parent_cache = array();
+        self::$cache_loaded = false;
+        self::$structure_loaded = false;
+    }
+
+
+    /**
      * Loads the structure cache into the local structure variable if not done yet
      *
      * @return void
@@ -167,7 +182,7 @@ class ContentService
             }
 
             // is this under the appropriate parent?
-            if (!Pattern::startsWith($base_url, $data['parent'])) {
+            if (!Pattern::startsWith($data['parent'] . '/', $base_url . '/')) {
                 continue;
             }
 
@@ -227,7 +242,7 @@ class ContentService
                 'depth' => $current_depth,
                 'children' => self::getContentTree($url, $depth - 1, $folders_only, $include_entries, $show_hidden, $include_content, $exclude),
                 'is_current' => (URL::getCurrent() == $url),
-                'is_parent' => (URL::getCurrent() != $url && Pattern::startsWith(URL::getCurrent(), $url)),
+                'is_parent' => (URL::getCurrent() != $url && Pattern::startsWith(URL::getCurrent(), $url . '/')),
                 'is_entry' => $data['is_entry'],
                 'is_page' => $data['is_page'],
                 'is_folder' => ($data['type'] == 'folder'),

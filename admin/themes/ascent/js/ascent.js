@@ -119,8 +119,14 @@ $(function() {
         {name:'Numeric List', openWith:function(markItUp) {
           return markItUp.line+'. ';
         }},
-        {name:'Picture', key:'P', replaceWith:'![[![Alternative text]!]]([![Url:!:http://]!])'},
-        {name:'Link', key:'L', openWith:'[', closeWith:']([![Url:!:http://]!])', placeHolder:'Your text to link here...' },
+        {name:'Picture', key:'P', beforeInsert: function(markItUp) {
+          markItUploader.show(markItUp, 'image', 'markdown');
+        }},
+        {name:'File', beforeInsert: function(markItUp) {
+          markItUploader.show(markItUp, 'file', 'markdown');
+        }},
+        {name:'Link', key:'L', openWith:'[', closeWith:']([![Url:!:http://]!])', placeHolder:'Your text to link' +
+        ' here...' },
         {name:'Quotes', openWith:'> '},
         {name:'Code Block / Code', openWith:'(!(\t|!|`)!)', closeWith:'(!(`)!)'}
       ];
@@ -138,7 +144,12 @@ $(function() {
         {name:'Italic', key:'I', openWith:'_', closeWith:'_'},
         {name:'Bulleted List', openWith:'(!(* |!|*)!)'},
         {name:'Numeric List', openWith:'(!(# |!|#)!)'},
-        {name:'Picture', key:'P', replaceWith:'![![Source:!:http://]!]([![Alternative text]!])!'},
+        {name:'Picture', key:'P', beforeInsert: function(markItUp) {
+          markItUploader.show(markItUp, 'image', 'textile');
+        }},
+        {name:'File', beforeInsert: function(markItUp) {
+          markItUploader.show(markItUp, 'file', 'textile');
+        }},
         {name:'Link', key:'L', openWith:'"', closeWith:'([![Title]!])":[![Link:!:http://]!]', placeHolder:'Your text to link here...' },
         {name:'Quotes', openWith:'bq. '},
         {name:'Code Block / Code', openWith:'bc. '}
@@ -157,7 +168,12 @@ $(function() {
         {name:'Italic', key:'I', openWith:'<em>', closeWith:'</em>'},
         {name:'Bulleted List', openWith:'<ul>\n\t<li>', closeWith: '</li>\n</ul>' },
         {name:'Numeric List', openWith:'<ol>\n\t<li>', closeWith: '</li>\n</ol>' },
-        {name:'Picture', key:'P', replaceWith:'<img src="[![Source:!:http://]!]" alt="[![Alternative text]!]" />' },
+        {name:'Picture', key:'P', beforeInsert: function(markItUp) {
+          markItUploader.show(markItUp, 'image', 'html');
+        }},
+        {name:'File', beforeInsert: function(markItUp) {
+          markItUploader.show(markItUp, 'file', 'html');
+        }},
         {name:'Link', key:'L', openWith:'<a href="[![Link:!:http://]!]"(!( title="[![Title]!]")!)>', closeWith:'</a>', placeHolder:'Your text to link...' },
         {name:'Quotes', openWith:'<blockquote>\n\t<p>', closeWith:'\n</p></blockquote>'},
         {name:'Code Block / Code', openWith:'<pre><code>', closeWith:'</code></pre>'},
@@ -165,7 +181,134 @@ $(function() {
       break;
   };
 
+  markItUploader = {
+    modal: $('#markituploader'),
+    show: function(markItUp, uploadType, lang) {
+        var self = this;
+        self.lang = lang;
+        self.uploadType = uploadType;
+        // one-time setup
+        if ( ! self.modal.hasClass('initialized')) {
+          self.init(markItUp, uploadType, lang);
+        }
+        // reset
+        self.reset();
+        // show modal
+        self.modal.modal();
+        // bind the insert button
+        self.bindInsert();
+        // add the alt text
+        self.modal.find('.alt-text').val(markItUp.selection);
+        // adjust the label
+        self.modal.find('.alt-label').toggle(uploadType == 'image');
+    },
+    init: function(markItUp, uploadType, lang) {
+      var self = this;
+      self.dropzone = $('#miu-dropzone');
+      // bind uploader to field
+      $('#miu-file').fileupload({
+          dataType: 'json',
+          url: markItUp.textarea.dataset[uploadType+'Url'],
+          dropzone: self.dropzone,
+          replaceFileInput: false, // prevent 'no file chosen' when a file is chosen
+          done: function (e, data) {
+            self.uploadComplete(data);
+          }
+      });      
+      // dropzone effects
+      self.bindDropzoneEffects();
+      // mark
+      self.modal.addClass('initialized');
+    },
+    reset: function() {
+      var self = this;
+      self.img = undefined;
+      self.dropzone.removeClass('done');
+      self.dropzone.find('.ss-icon').text('attach');
+      self.dropzone.find('b').text('Drag a file here to upload it');
+    },
+    uploadComplete: function(data) {
+      var self = this;
+      self.img = data.result.filelink;
+      self.dropzone.addClass('done');
+      self.dropzone.find('.ss-icon').text('image');
+      self.dropzone.find('b').text(self.img);
+    },
+    bindInsert: function() {
+       var self = this;
+       self.modalFooter = self.modal.find('.modal-footer');
+       self.modalFooter.find('button').one('click', function(e) {
+           e.preventDefault();
+           self.alt = self.modal.find('.alt-text').val();
+           self.replace();
+           self.modal.modal('hide');
+       });
+    },
+    replace: function() {
+        var alt = this.alt || '';
+        var url = this.img;
 
+        if (self.uploadType == 'image') {
+
+          if (this.lang === 'markdown') {
+              var str = '!['+alt+']('+url+')';
+          } else if (this.lang === 'textile') {
+              alt = (alt) ? '['+alt+']' : '';
+              var str = '!'+url+alt+'!';
+          } else { // html
+              var str = '<img src="'+url+'" alt="'+alt+'" />';
+          }
+
+        } else {
+
+          var text = alt;
+          if (this.lang === 'markdown') {
+              var str = '['+text+']('+url+')';
+          } else if (this.lang === 'textile') {
+              var str = '"'+text+'":'+url;
+          } else { // html
+              var str = '<a href="'+url+'">'+text+'</a>';
+          }
+
+        }
+        $.markItUp({ replaceWith: str });
+    },
+    bindDropzoneEffects: function() {
+      var self = this;
+
+      // if drag and drop is available
+      if('draggable' in document.createElement('span')) {
+        self.modal.addClass('draggable');
+        $(document).on('dragover', function (e) {
+            var dropZone = self.dropzone,
+                timeout = window.dropZoneTimeout;
+            if (!timeout) {
+                dropZone.addClass('in');
+            } else {
+                clearTimeout(timeout);
+            }
+            var found = false,
+                node = e.target;
+            do {
+                if (node === dropZone[0]) {
+                    found = true;
+                    break;
+                }
+                node = node.parentNode;
+            } while (node != null);
+            if (found) {
+                dropZone.addClass('hover');
+            } else {
+                dropZone.removeClass('hover');
+            }
+            window.dropZoneTimeout = setTimeout(function () {
+                window.dropZoneTimeout = null;
+                dropZone.removeClass('in hover');
+            }, 100);
+        });
+      }
+    }
+  };
 
   markitupSettings = {
     previewParserPath: '',
@@ -290,6 +433,9 @@ $(function() {
   //
   /////////////////////////////////////////
 
+  // Patch to rename the ids to something, anything unique
+  $('#rename_me').attr('id', randomString());
+
   var checkGridState = function($grid) {
     var opacity,
       max_rows = parseInt($grid.data("maxRows"), 10) || Infinity,
@@ -337,6 +483,10 @@ $(function() {
       });
 
       $(this).attr("name", newName);
+
+      // Patch to rename the ids to something, anything unique
+      $('#rename_me').attr('id', randomString());
+
     });
   };
 
@@ -511,5 +661,68 @@ $(function() {
   // }, function() {
   //     //do stuff on release
   // });
+
+  function randomString(length) {
+      var string = '',
+          length = length || 32,
+          possible = "BCDFGHJKLMNPQRSTVWXYZbcdfghjklmnpqrstvwxwz0123456789";
+
+      for (var i=0; i < length; i++)
+          string += possible.charAt(Math.floor(Math.random() * possible.length));
+
+      return string;
+  }
+
+
+  /////////////////////////////////////////
+  //
+  // Expandable Pages
+  //
+  /////////////////////////////////////////
+
+  function supportsLocalStorage() {
+    try {
+      return 'localStorage' in window && window['localStorage'] !== null;
+    } catch (e) {
+      return false;
+    }
+  }
+
+  $(function(){
+    var hiddenPages = {};
+
+    // Hide previously closed nodes on load
+    if (supportsLocalStorage && localStorage['hiddenPages']) {
+      hiddenPages = JSON.parse(localStorage['hiddenPages']);
+      var tree = $('#page-tree');
+      _.each(hiddenPages, function(val, url) {
+        var node = tree.find('.page[data-url="'+url+'"]');
+        node.children('.subpages').hide();
+        node.find('.toggle-children .ss-icon').text('right')
+      });
+    }
+
+    // Toggle on click
+    $('.toggle-children').on('click', function() {
+      var btn      = $(this);
+      var page     = btn.closest('.page');
+      var url      = page.attr('data-url');
+      var icon     = btn.find('.ss-icon');
+      var hidden   = (icon.text() == 'right');
+      var iconText = (hidden) ? 'downright' : 'right';
+      icon.text(iconText);
+      $(this).parent().siblings('.subpages').toggle();
+
+      // Save state to local storage
+      if (supportsLocalStorage) {
+        if (!(url in hiddenPages)) {
+          hiddenPages[url] = true;
+        } else {
+          delete hiddenPages[url];
+        }
+        localStorage['hiddenPages'] = JSON.stringify(hiddenPages);
+      }
+    });
+  });
 
 });

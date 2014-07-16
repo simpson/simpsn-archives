@@ -23,6 +23,7 @@ buttons:
  - indent
  - '|'
  - image
+ - file
  - video
  - table
  - link

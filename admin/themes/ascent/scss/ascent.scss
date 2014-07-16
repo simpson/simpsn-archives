@@ -38,6 +38,7 @@ $linkActiveColor: $orange;
 @import 'grid';
 @import 'fonts';
 @import 'mixins';
+@import 'metrics';
 @import 'third-party';
   @import 'vendor/picker/default';
   @import 'vendor/picker/default.date';
@@ -1451,6 +1452,23 @@ code textarea {
       color:$textColor;
     }
   }
+
+  .toggle-children {
+    float: left;
+    border: 0;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#FFF), to(#F8F8F6));
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    height: 50px;
+    padding: 0 10px;
+    color: #CCC;
+
+    &:hover {
+      color: #1E3640;
+    }
+    .ss-icon {
+      margin: 0;
+    }
+  }
 }
 
 .page-view, .page-add, .page-delete {
@@ -1495,6 +1513,9 @@ code textarea {
     border-bottom:1px dotted #ccc;
     text-decoration:none;
     &:hover {color:#000;}
+  }
+  h2, h3 {
+    margin-bottom: 15px;
   }
 }
 
@@ -1718,6 +1739,25 @@ code textarea {
 }
 
 
+.stats-table {
+
+  width: 100%;
+  th {text-align: left;}
+  .right {
+    text-align: right;
+  }
+  th, td {
+    padding: 10px 0;
+    border-bottom: 1px solid $borderColor;
+  }
+  tr:last-child {
+    th, td {
+      border-bottom: none;
+    }
+  }
+}
+
+
 .warning {color:$red}
 .muted, .subtle {color:#aaa;}
 .modal-backdrop{position:fixed;top:0;right:0;bottom:0;left:0;z-index:1040;background:#5e5c49 url(../img/topo-bigger-white.png);}.modal-backdrop.fade{opacity:0;}
@@ -1928,4 +1968,71 @@ code textarea {
   }
 }
 
+
+// markituploader
+// ----------------------------------------------------------------------------
+
+.markituploader {
+  
+  .modal {
+    width: 360px;
+    margin-left: -180px;
+  }
+
+  &.draggable {
+    .miu-dropzone { display: block; }
+    .miu-file { display: none; }
+  }
+
+  label {
+    padding-bottom: 0.4em;
+    display: block;
+  }
+
+  input {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #ddd;
+    font-size: 1.15em;
+    padding: 0.3em 0.4em;
+  }
+}
+
+.miu-file {
+  margin-bottom: 20px;
+}
+
+.miu-dropzone {
+  background: $lightTan;
+  border: 2px dashed darken($lightTan, 20);
+  text-align: center;
+  padding: 30px 0 25px;
+  display: none;
+
+  &.in {
+    border-color: darken($lightTan, 40);
+  }
+  &.hover {
+    background: darken($lightTan, 5);
+    color: white;
+  }
+  &.done {
+    border: 2px solid #d6e9c6;
+    background: #dff0d8;
+    padding: 20px;
+    b, .ss-icon { color: #3c763d; }
+    .ss-icon { display: block; }
+  }
+
+  b { color: darken($lightTan, 20); }
+
+  .ss-icon {
+    font-size: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    color: darken($lightTan, 20);
+  }
+}
 

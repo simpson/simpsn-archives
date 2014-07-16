@@ -33,20 +33,38 @@ class YAML
      */
     public static function parse($yaml, $mode = null)
     {
+        // start measuring
+        $hash = Debug::markStart('parsing', 'yaml');
+        
         $mode = $mode ? $mode : self::getMode();
 
         switch ($mode) {
-            case('loose'): return Spyc::YAMLLoad($yaml);
-            case('strict'): return sYAML::parse($yaml);
+            case('loose'): 
+                $result = Spyc::YAMLLoad($yaml);
+                break;
+            
+            case('strict'): 
+                $result = sYAML::parse($yaml);
+                break;
+            
             case('transitional'):
                 try {
-                    return sYaml::parse($yaml);
+                    $result = sYaml::parse($yaml);
                 } catch(Exception $e) {
                     Log::error($e->getMessage() . ' Falling back to loose mode.', 'core', 'yaml');
-                    return Spyc::YAMLLoad($yaml);
+                    $result = Spyc::YAMLLoad($yaml);
                 }
-            default: return Spyc::YAMLLoad($yaml);
+                break;
+            
+            default: 
+                $result = Spyc::YAMLLoad($yaml);
         }
+
+        // end measuring
+        Debug::markEnd($hash);
+        Debug::increment('parses', 'yaml');
+        
+        return $result;
     }
 
 

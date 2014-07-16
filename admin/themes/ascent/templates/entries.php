@@ -3,7 +3,9 @@
     <li><a href="<?php echo $app->urlFor("pages"); ?>">Pages</a></li>
     <li class="separator">&nbsp;</li>
     <?php foreach($listings as $listing): ?>
-      <li><a href="entries?path=<?php echo $listing['slug']?>" <?php if ($listing['slug'] === $path): ?> class="active" <?php endif ?>><?php echo $listing['title'] ?></a></li>
+      <?php if (CP_Helper::is_page_visible($listing)): ?>
+        <li><a href="entries?path=<?php echo $listing['slug']?>" <?php if ($listing['slug'] === $path): ?> class="active" <?php endif ?>><?php echo $listing['title'] ?></a></li>
+      <?php endif ?>
     <?php endforeach ?>
   </ul>
 </div>
@@ -88,7 +90,7 @@
         </div>
       </div>
 
-       <input type="submit" class="btn pull-left" data-bind="visible: selectedAction() != '' && selectedEntries().length > 0" value="<?php echo Localization::fetch('confirm_delete')?>">
+       <input type="submit" class="btn pull-left" data-bind="visible: selectedAction() != '' && selectedEntries().length > 0" value="<?php echo Localization::fetch('confirm_action')?>">
     </div>
   </form>
 

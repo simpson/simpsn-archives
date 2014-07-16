@@ -12,6 +12,8 @@ use Symfony\Component\Finder\Finder as Finder;
  */
 class Content
 {
+    private static $fetched_content = array();
+    
     /**
      * Checks to see if a given $slug (and optionally $folder) exist
      *
@@ -110,10 +112,16 @@ class Content
      */
     public static function get($url, $parse_content=true, $supplement=true)
     {
-        $content_set  = ContentService::getContentByURL($url);
-        $content      = $content_set->get($parse_content, $supplement);
-
-        return (isset($content[0])) ? $content[0] : array();
+        $hash = Debug::markStart('content', 'getting');
+        $url_hash = Helper::makeHash($url, $parse_content, $supplement);
+        
+        if (!isset(self::$fetched_content[$url_hash])) {
+            $content_set  = ContentService::getContentByURL($url);
+            $content      = $content_set->get($parse_content, $supplement);
+            self::$fetched_content[$url_hash] = (isset($content[0])) ? $content[0] : array();
+        }
+        Debug::markEnd($hash);
+        
+        return self::$fetched_content[$url_hash];
     }
-
 }

@@ -232,19 +232,23 @@ class Plugin_member extends Plugin
     {
         // parse parameters
         $username = $this->fetchParam(array('username', 'name', 'member'), null, false, false, false);
+        $uid      = $this->fetchParam('uid', null, false, false, false);
 
-        // no username? try to use the current user
-        if (!$username) {
-            $user = Auth::getCurrentMember();
-
-            if ($user) {
-                $username = $user->get('name');
-            } else {
-                return array('no_results' => true);
-            }
+        if ($username) {  // username
+            return Member::getProfile($username);
+        } elseif ($uid) {  // uid
+            return Member::getProfileByUID($uid);
         }
+        
+        // neither of those? try the current user
+        $user = Auth::getCurrentMember();
 
-        return Member::getProfile($username);
+        if ($user) {
+            $username = $user->get('name');
+            return Member::getProfile($username);
+        } else {
+            return array('no_results' => true);
+        }
     }
 
     

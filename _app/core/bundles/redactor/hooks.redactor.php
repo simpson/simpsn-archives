@@ -49,7 +49,7 @@ class Hooks_redactor extends Hooks
                     $resize_options_string = http_build_query($resize_options);
 
                     $options['imageGetJson'] = Config::getSiteRoot()."TRIGGER/redactor/fetch_images?path={$image_path}";
-                    $options['imageUpload'] = Config::getSiteRoot()."TRIGGER/redactor/upload?path={$image_path}&{$resize_options_string}";
+                    $options['imageUpload'] = Config::getSiteRoot()."TRIGGER/redactor/upload?path={$image_path}&{$resize_options_string}&is_image=true";
                 }
 
                 // File uploads
@@ -107,6 +107,7 @@ class Hooks_redactor extends Hooks
         }
 
         $path = Request::get('path');
+        $is_image = Request::get('is_image');
 
         if (isset($path)) {
 
@@ -119,32 +120,29 @@ class Hooks_redactor extends Hooks
 
             Folder::make($dir);
 
-            $_FILES['file']['type'] = strtolower($_FILES['file']['type']);
+            $file_type = strtolower($_FILES['file']['type']);
+            $file_info = pathinfo($_FILES['file']['name']);
 
-            if ($_FILES['file']['type'] == 'image/png'
-            || $_FILES['file']['type'] == 'image/jpg'
-            || $_FILES['file']['type'] == 'image/gif'
-            || $_FILES['file']['type'] == 'image/jpeg') {
+            // pull out the filename bits
+            $filename = $file_info['filename'];
+            $ext = $file_info['extension'];
 
-                $file_info = pathinfo($_FILES['file']['name']);
+            // build filename
+            $file = $dir.$filename.'.'.$ext;
 
-                // pull out the filename bits
-                $filename = $file_info['filename'];
-                $ext = $file_info['extension'];
+            // check for dupes
+            if (File::exists($file)) {
+                $file = BASE_PATH . '/' . $dir.$filename.'-'.date('YmdHis').'.'.$ext;
+            }
 
-                // build filename
-                $file = $dir.$filename.'.'.$ext;
+            if ( ! Folder::isWritable($dir)) {
+                Log::error('Upload failed. Directory "' . $dir . '" is not writable.', 'redactor');
+                echo json_encode(array('error' => "Redactor: Upload directory not writable."));
+                die();
+            }
 
-                // check for dupes
-                if (File::exists($file)) {
-                    $file = BASE_PATH . '/' . $dir.$filename.'-'.date('YmdHis').'.'.$ext;
-                }
-
-                if ( ! Folder::isWritable($dir)) {
-                    Log::error('Upload failed. Directory "' . $dir . '" is not writable.', 'redactor');
-                    echo json_encode(array('error' => "Redactor: Upload directory not writable."));
-                    die();
-                }
+            if ($is_image && (
+                $_FILES['file']['type'] == 'image/png' || $_FILES['file']['type'] == 'image/jpg' || $_FILES['file']['type'] == 'image/gif' || $_FILES['file']['type'] == 'image/jpeg')) {
 
                 if (Request::get('resize', false)) {
 
@@ -160,15 +158,16 @@ class Hooks_redactor extends Hooks
                           ->save($file, $quality);
 
                 } else {
-                    copy($_FILES['file']['tmp_name'], $file);
+                    move_uploaded_file($_FILES['file']['tmp_name'], $file);
                 }
 
-                $return = array('filelink' => Path::toAsset($file));
-
-                echo stripslashes(json_encode($return));
             } else {
-                echo json_encode(array('error' => "Redactor: Looks like your image filesize is too big. Check your php.ini settings."));
+                move_uploaded_file($_FILES['file']['tmp_name'], $file);
             }
+            
+            $return = array('filelink' => Path::toAsset($file));
+
+            echo stripslashes(json_encode($return));
 
         } else {
             echo json_encode(array('error' => "Redactor: Upload directory not set."));

@@ -20,6 +20,8 @@ class Fieldtype_suggest extends Fieldtype
         $max_items = array_get($this->field_config, 'max_items', 'null');
         $force_list = array_get($this->field_config, 'force_list', false);
         $multiple = array_get($this->field_config, 'multiple', true);
+        $allow_blank = array_get($this->field_config, 'allow_blank', false);
+        $placeholder = array_get($this->field_config, 'placeholder', false);
 
         if ($max_items === 1 && !$force_list) {
             $multiple = false;
@@ -27,6 +29,7 @@ class Fieldtype_suggest extends Fieldtype
 
         $multiple_array_holder = $multiple ? '[]' : '';
         $multiple_string = $multiple ? "multiple='multiple'" : '';
+        $placeholder_string = $placeholder ? "placeholder='$placeholder'" : '';
 
         $suggestions = array();
 
@@ -120,15 +123,44 @@ class Fieldtype_suggest extends Fieldtype
 
         /*
         |--------------------------------------------------------------------------
+        | Members
+        |--------------------------------------------------------------------------
+        |
+        | Fetch a list of members, using any existing fields as labels and values
+        |
+        */
+
+        if (isset($this->field_config['members'])) {
+
+            $config = $this->field_config['members'];
+
+            $value   = array_get($config, 'value', '_uid');
+            $label   = array_get($config, 'label', 'username');
+
+            $member_set = MemberService::getMembers();
+            $member_set->filter(array(
+                'role'   => array_get($config, 'role')
+            ));
+            $members = $member_set->get();
+
+            foreach ($members as $key => $member) {
+                if (isset($member[$label]) && isset($member[$value])) {
+                    $suggestions[$member[$value]] = $member[$label];
+                }
+            }
+        }
+
+        /*
+        |--------------------------------------------------------------------------
         | Input HTML
         |--------------------------------------------------------------------------
         |
         | Generate the HTML for the select field. A single, blank option is
-        | needed if in single select mode.
+        | needed if allow blank is true.
         |
         */
 
-        $html = "<div id='$this->field_id'><select name='{$this->fieldname}{$multiple_array_holder}' tabindex='{$this->tabindex}' $multiple_string class='suggest'>\n";
+        $html = "<div id='$this->field_id'><select name='{$this->fieldname}{$multiple_array_holder}' tabindex='{$this->tabindex}' $multiple_string $placeholder_string class='suggest'>\n";
 
         $is_indexed = (array_values($suggestions) === $suggestions);
 
@@ -136,6 +168,10 @@ class Fieldtype_suggest extends Fieldtype
         if (is_array($field_data)) {
             $field_data = array_combine($field_data, $field_data);
             $suggestions = array_merge($field_data, $suggestions);
+        }
+
+        if ($allow_blank) {
+            $html .= "<option value=''></option>\n";
         }
 
         foreach ($suggestions as $value => $label) {

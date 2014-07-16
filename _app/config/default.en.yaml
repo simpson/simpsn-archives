@@ -114,6 +114,16 @@ translations:
   are_you_sure: Are you sure? This cannot be undone.
   access_denied: Access Denied
   enable_curl: cURL must be enabled to perform a security test.
+  
+  # File-upload errors
+  upload_error_ini_size: File upload failed. The file’s size is more than PHP’s configuration allows.
+  upload_error_form_size: File upload failed. The file’s size is more than the `MAX_FILE_SIZE` on the form allows.
+  upload_error_err_partial: File upload failed. The file was only partially uploaded.
+  upload_error_no_file: File upload failed. No file was chosen for upload.
+  upload_error_no_temp_dir: File upload failed. No temporary directory has been specified.
+  upload_error_cant_write: File upload failed. The temporary upload directory may not be writable.
+  upload_error_extension: File upload failed. A PHP extension has stopped the file upload from working.
+  upload_error_unknown: File upload failed for unknown reasons.
 
   # Security
   security_status: Security Status
@@ -134,3 +144,11 @@ translations:
   security_content_folder: "Your content folder is accessible to the web. While not critical, it is best practice to protect this folder."
   security_template_files: "Your theme template files are accessible to the web. While not critical, it is best practice to protect these files."
   security_logs_folder: "Your logs folder is accessible to the web. It is critical that you protect this folder."
+
+
+  # Raven
+  export_csv: Export to CSV
+  raven: Raven
+  raven_forms: Raven Forms
+  form: Form
+  submissions: Submissions

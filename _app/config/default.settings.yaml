@@ -18,6 +18,7 @@ _enable_smartypants: true
 _theme_cache_bust: false
 _allow_php: false
 _yaml_mode: loose
+_markdown_parser: standard
 _parse_order:
   - content
   - tags
@@ -33,6 +34,7 @@ _log_enabled: true
 _log_level: debug
 _log_file_path: _logs
 _log_file_prefix: site
+_display_debug_panel: false
 
 _admin_enabled: false
 _admin_path: admin

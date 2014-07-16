@@ -63,6 +63,22 @@
           </li>
           <?php endif ?>
 
+
+          <?php foreach (CP_Helper::addon_nav_items() as $item): ?>
+
+            <li id="item-<?php echo $item ?>">
+              <a href="<?php echo URL::assemble($app->request()->getRootUri(), $item); ?>"<?php if ($route === $item):?> class="active"<?php endif ?>>
+                <span class="ss-icon">
+                  <?php if (Localization::fetch('nav_icon_' . $item) !== 'nav_icon_' . $item): ?>
+                    <?php echo Localization::fetch('nav_icon_' . $item)?>
+                  <?php endif ?>
+                </span>
+                <span class="title"><?php echo Localization::fetch('nav_title_' . $item)?></span>
+              </a>
+            </li>
+
+          <?php endforeach; ?>
+
         </ul>
 
         <ul class="pull-right secondary-controls">

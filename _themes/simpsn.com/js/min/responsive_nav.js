@@ -1,2 +1,0 @@
-$(function(){function o(){var o=$(document).outerHeight(!0);$(".custom-menu-primary").height(o)}$(".custom-menu-primary").after('<a class="mobile-icon"><span></span></a>'),$(".custom-menu-primary .hs-menu-flow-horizontal>ul").before('<a class="close-icon"><span></span></a>'),$(".mobile-icon, .close-icon").click(function(){$("body").toggleClass("show-mobile-nav ")}),o(),$(window).resize(o),$("body").find("script").remove().end().wrapInner("<div id='site-wrapper' />")});
-//# sourceMappingURL=./responsive_nav.map

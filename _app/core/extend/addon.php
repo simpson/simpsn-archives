@@ -257,19 +257,35 @@ abstract class Addon
     public function getConfig()
     {
         $config = array();
+        $environment = strtolower(Environment::get());
+        $to_parse = '';
 
         // load defaults if they exist
         if (File::exists($file = $this->getAddonLocation() . 'default.yaml')) {
-            $config = YAML::parse($file);
+            $to_parse .= File::get($file) . "\n\n";
         }
 
         // load config
         if (File::exists($file = Config::getConfigPath() . '/bundles/' . $this->addon_name . '/' . $this->addon_name . '.yaml')) {
-            $config = YAML::parseFile($file) + $config;
+            $to_parse .= File::get($file) . "\n\n";
         } elseif (File::exists($file = Config::getConfigPath() . '/add-ons/' . $this->addon_name . '/' . $this->addon_name . '.yaml')) {
-            $config = YAML::parseFile($file) + $config;
+            $to_parse .= File::get($file) . "\n\n";
         } elseif (File::exists($file = Config::getConfigPath() . '/add-ons/' . $this->addon_name . '.yaml')) {
-            $config = YAML::parseFile($file) + $config;
+            $to_parse .= File::get($file) . "\n\n";
+        }
+        
+        // load environment-specific config if it exists
+        if ($environment) {
+            if (File::exists($file = Config::getConfigPath() . '/bundles/' . $this->addon_name . '/' . $environment . '.yaml')) {
+                $to_parse .= File::get($file) . "\n\n";
+            } elseif (File::exists($file = Config::getConfigPath() . '/add-ons/' . $this->addon_name . '/' . $environment . '.yaml')) {
+                $to_parse .= File::get($file) . "\n\n";
+            }
+        }
+        
+        // did we find something to parse?
+        if ($to_parse) {
+            $config = YAML::parse($to_parse);
         }
 
         return $config;
@@ -313,7 +329,7 @@ abstract class Addon
      *
      * @param string  $keys  Key of value to retrieve
      * @param mixed  $default  Default value if no value is found
-     * @param string  $validity_check  Allows a boolean callback function to validate parameter
+     * @param callable  $validity_check  Allows a boolean callback function to validate parameter
      * @param boolean  $is_boolean  Indicates parameter is boolean
      * @param boolean  $force_lower  Force the parameter's value to be lowercase?
      * @return mixed
@@ -336,7 +352,7 @@ abstract class Addon
                     }
                 }
     
-                if (is_null($validity_check) || (!is_null($validity_check) && function_exists($validity_check) && $validity_check($value) === true)) {
+                if (is_null($validity_check) || ($validity_check && is_callable($validity_check) && $validity_check($value) === true)) {
                     // account for yes/no parameters
                     if ($is_boolean === true) {
                         return !in_array(strtolower($value), array("no", "false", "0", "", "-1"));
