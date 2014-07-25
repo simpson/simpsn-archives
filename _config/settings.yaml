@@ -13,7 +13,7 @@
 ###########################################################################################
 
 # Enter your license key
-_license_key:
+_license_key: 19a03946-d60c-4c06-b5a7-902750827930
 
 _language: en
 
@@ -27,7 +27,7 @@ _site_name: David Simpson
 _content_root: _content
 
 # Used for permalinks
-_site_url: http://dev.simpsn.com
+_site_url: http://simpsn.com
 
 # Folder name of your desired theme
 _theme: simpsn
