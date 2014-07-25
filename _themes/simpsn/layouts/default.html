@@ -1,0 +1,161 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en">        <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en">               <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en">									     <!--<![endif]-->
+	
+	<head>
+		<meta charset="utf-8">
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"> -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="author" content="David Simpson">
+		<meta name="description" content="">
+		
+		<title>
+			{{ if segment_1 }}
+				{{ title }} |
+			{{ endif }}
+			{{ _site_name }}
+		</title>
+
+		<!-- favicon -->
+		<link rel="shortcut icon" type="image/png" href="{{ theme:img src="favicon.png" }}">
+
+		<!-- styles -->
+		<!-- {{ theme:css src="arrange" tag="true" }}
+		{{ theme:css tag="true" }} -->
+		<link href="https://static.hsappstatic.net/content_shared_assets/static-1.3754/css/public_common.css" rel="stylesheet" >
+		<link rel="stylesheet" href="//simpson.github.io/web/css/simpson_public_assets.css">
+		<!-- <link rel="stylesheet" href="/_hcms/raw-resource?portalId=185303&path=custom/styles/default/hs_default_custom_style.css"> -->
+		<link rel="stylesheet" href="//cdn2.hubspot.net/hub/185303/hub_generated/style_manager/1396223608389/custom/page/simpsn/simpsn-no-style.min.css">
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript">hsjQuery = window['jQuery']</script>
+		<script type="text/javascript" src="//simpson.github.io/web/js/min/simpson_public_assets.js"></script>
+		<script type="text/javascript" src="//use.typekit.net/dzf6zyl.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+		<script type="text/javascript">
+			//<![CDATA[
+			  (function() {
+			    var shr = document.createElement('script');
+			    shr.setAttribute('data-cfasync', 'false');
+			    shr.src = '//dsms0mj1bbhn4.cloudfront.net/assets/pub/shareaholic.js';
+			    shr.type = 'text/javascript'; shr.async = 'true';
+			    shr.onload = shr.onreadystatechange = function() {
+			      var rs = this.readyState;
+			      if (rs && rs != 'complete' && rs != 'loaded') return;
+			      var site_id = '38618cb7f631291a5ef1e30f1c2fa8b7';
+			      try { Shareaholic.init(site_id); } catch (e) {}
+			    };
+			    var s = document.getElementsByTagName('script')[0];
+			    s.parentNode.insertBefore(shr, s);
+			  })();
+			//]]>
+		</script>
+
+		<script>
+			var _prum = [['id', '5335e01fabe53d86263e78fc'],
+			             ['mark', 'firstbyte', (new Date()).getTime()]];
+			(function() {
+			    var s = document.getElementsByTagName('script')[0]
+			      , p = document.createElement('script');
+			    p.async = 'async';
+			    p.src = '//rum-static.pingdom.net/prum.min.js';
+			    s.parentNode.insertBefore(p, s);
+			})();
+		</script>
+
+    <!--[if lt IE 9]>
+	    <script src="https://static.hsappstatic.net/content_shared_assets/static-1.3754/js/css3-mediaqueries.js"></script>
+    <![endif]-->
+	</head>
+
+	<body>
+		
+		<div class="body-container-wrapper">
+			
+			<div class="main-navigation">
+				<div class="top">
+					<nav class="custom-menu-primary">
+						<span id="hs_cos_wrapper_module_1377741283501104" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_menu" style="" data-hs-cos-general-type="widget" data-hs-cos-type="menu">
+							<div id="hs_menu_wrapper_module_1377741283501104" class="hs-menu-wrapper active-branch flyouts hs-menu-flow-vertical" data-sitemap-name="default">
+								<ul>
+									<li class="hs-menu-item hs-menu-depth-1{{ if current_url == "/" }} active active-branch{{ endif }}"><a href="{{ homepage }}">Home</a></li>
+									<li class="hs-menu-item hs-menu-depth-1{{ if current_url == "/about" }} active active-branch{{ endif }}"><a href="{{ homepage }}about">About</a></li>
+									<li class="hs-menu-item hs-menu-depth-1{{ if current_url == "/work" }} active active-branch{{ endif }}"><a href="{{ homepage }}work">Work</a></li>
+									<li class="hs-menu-item hs-menu-depth-1{{ if current_url == "/blog" || current_url|length > 11 }} active active-branch{{ endif }}"><a href="{{ homepage }}blog">Blog</a></li>
+									<li class="hs-menu-item hs-menu-depth-1{{ if current_url == "/free-stuff" }} active active-branch{{ endif }}"><a href="{{ homepage }}free-stuff">Free Stuff</a></li>
+									<li class="hs-menu-item hs-menu-depth-1{{ if current_url == "/library" }} active active-branch{{ endif }}"><a href="{{ homepage }}library">Library</a></li>
+									<li class="hs-menu-item hs-menu-depth-1{{ if current_url == "/connect" }} active active-branch{{ endif }}"><a href="{{ homepage }}connect">Connect</a></li>
+								</ul>
+							</div>
+						</span>
+          </nav>
+        </div>
+        <div class="bottom">
+          <span id="hs_cos_wrapper_site_colophon" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_raw_html" style="" data-hs-cos-general-type="widget" data-hs-cos-type="raw_html"><a href="{{ homepage }}"><img src="http://cdn2.hubspot.net/hub/185303/file-284311052-png/assets/core/simpson.png" class="letter-logo" alt="Simpson"></a></span>
+        </div>
+      </div>
+      
+      <div class="body-content">
+				{{ layout_content }}
+      </div>
+
+    </div><!--end body wrapper -->
+		
+		<script type="text/javascript" src="https://static.hsappstatic.net/content_shared_assets/static-1.3754/js/public_common.js"></script>
+
+		<!-- Start of Async HubSpot Analytics Code -->
+		<script type="text/javascript">
+			var _hsq = _hsq || [];
+			_hsq.push(["setContentType", "listing-page"]);
+			_hsq.push(["setCanonicalUrl", "http:\/\/blog.simpsn.com"]);
+			_hsq.push(["setPageId", "8920841"]);
+
+			(function(d,s,i,r) {
+		    if (d.getElementById(i)){return;}
+		    var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+		    n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/185303.js';
+		    e.parentNode.insertBefore(n, e);
+			})(document,"script","hs-analytics",300000);
+		</script>
+		<!-- End of Async HubSpot Analytics Code -->
+
+
+		<script type="text/javascript">
+			var hsVars = {
+		    ticks: 1405539106073,
+		    page_id: 0,
+		    content_group_id: 8920841,
+		    portal_id: 185303,
+		    app_hs_base_url: "https://app.hubspot.com"
+			}
+		</script>
+
+
+		<script type="text/javascript">
+		  var _gauges = _gauges || [];
+		  (function() {
+		    var t   = document.createElement('script');
+		    t.type  = 'text/javascript';
+		    t.async = true;
+		    t.id    = 'gauges-tracker';
+		    t.setAttribute('data-site-id', '5181db90108d7b3c16000095');
+		    t.src = '//secure.gaug.es/track.js';
+		    var s = document.getElementsByTagName('script')[0];
+		    s.parentNode.insertBefore(t, s);
+		  })();
+		</script>
+
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-34499528-1', 'blog.simpsn.com');
+		  ga('send', 'pageview');
+		</script>
+	
+	</body>
+</html>

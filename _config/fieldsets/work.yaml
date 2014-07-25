@@ -1,0 +1,11 @@
+fields:
+  work_url:
+    display: Work URL
+    type: text
+
+  screenshot:
+    display: Image URL
+    type: text
+
+  content:
+    type: markitup

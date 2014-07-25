@@ -10,6 +10,9 @@ routes:
   # Visiting example.com/contact-us will...
   # load the /templates/contact.html template
 
+  blog.simpsn.com/* :
+    template: blog
+
   /blog/categories : all-categories
 
 

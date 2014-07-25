@@ -1,0 +1,38 @@
+<div class="row-fluid">
+	<div class="span12 widget-span widget-type-raw_jinja" data-widget-type="raw_jinja" data-x="0" data-w="12">
+		<div class="home-marquee" id="marquee">
+			<div class="inner" style="background-image: url('{{ photo_url }}');"></div>
+			<div class="headline" id="marquee-headline">
+				<h1><span id="hs_cos_wrapper_headline-text" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="text">{{ h1 }}</span></h1>
+			</div>
+			{{ if photo_credit }}<div class="marquee-photo-credit">{{ photo_credit }}</div>{{ endif }}
+		</div>
+	</div>
+</div>
+
+<div class="content blog first">
+	<div class="row-fluid">
+		<div class="span12">
+			{{ content|widont }}
+		</div>
+	</div>
+
+	<div class="row-fluid ">
+		<div class="span12 widget-span widget-type-blog_content" data-widget-type="blog_content" data-x="0" data-w="12">
+			<div class="">
+				<ul class="blog-post-list">
+					
+					{{ entries:listing folder="blog" }}
+						<li>
+							<span class="post-title"><a href="{{ url }}">{{ title }}</a></span>
+							<span class="post-date">{{ date }}</span>
+						</li>
+					{{ /entries:listing }}
+
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+{{ theme:partial src="social-links" }}
