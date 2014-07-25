@@ -1,0 +1,36 @@
+<div class="row-fluid">
+  <div class="span12 widget-span widget-type-raw_jinja" data-widget-type="raw_jinja" data-x="0" data-w="12">
+    <div id="marquee" class="marquee blog">
+      <div id="back-image" class="inner" style="background-image: url('{{ photo_url }}');"></div>
+      <div class="headline" id="marquee-headline">
+        <h1 id="post-name"><span id="hs_cos_wrapper_name" class="hs_cos_wrapper hs_cos_wrapper_meta_field hs_cos_wrapper_type_text" style="" data-hs-cos-general-type="meta_field" data-hs-cos-type="text">{{ title|smartypants|widont }}</span></h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class='shareaholic-canvas' data-app='share_buttons' data-app-id='5533712'></div>
+
+<div class="">
+  <div class="row-fluid ">
+    <div class="blog-post">
+      <div class="section post-header">
+        <span class="blog-post-date"><span>Posted March 26, 2014</span></span>
+      </div>
+      <div class="section post-body">
+        <img src="{{ photo_url }}" style="display: none;">
+        <span id="hs_cos_wrapper_post_body" class="hs_cos_wrapper hs_cos_wrapper_meta_field hs_cos_wrapper_type_rich_text" style="" data-hs-cos-general-type="meta_field" data-hs-cos-type="rich_text">
+        	<div class="content">
+        		{{ content|widont }}
+      		</div>
+      	</span>
+        <div class="content">
+          <h5 class="social-response">Question? Comments? Concerns? Tweet <a href="https://twitter.com/intent/tweet?screen_name=simpson&text=What do you think?&url=http://blog.simpsn.com/joining-the-assembla-team">@simpson</a></h5>
+          <p>&nbsp;</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{ theme:partial src="social-links" }}

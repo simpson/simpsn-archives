@@ -1,0 +1,69 @@
+# Turn on the Rewrite Engine
+
+Options +FollowSymLinks
+RewriteEngine On
+
+# If you're running in a subfolder (like http://example.com/statamic),
+# add that here. E.g. /statamic/
+RewriteBase /
+Options -Indexes
+# Protect your system files from prying eyes
+RewriteRule ^(_app) - [F,L]
+RewriteRule ^(_config) - [F,L]
+RewriteRule ^(_cache) - [F,L]
+RewriteRule ^(_content) - [F,L]
+RewriteRule ^(_logs) - [F,L]
+RewriteRule ^(admin/themes/[^/]*/(?:layouts|templates)) - [F,L]
+RewriteRule ^(.*)?\.yml$ - [F,L]
+RewriteRule ^(.*)?\.yaml$ - [F,L]
+RewriteRule ^(.*/)?\.git+ - [F,L]
+
+# This will prevent all .html files from being accessed.
+# You may want to remove this line if you want to serve
+# static files outside of Statamic
+RewriteRule ^(.*)?\.html$ - [F,L]
+
+# Remove trailing slashes from your URL
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)\/(\?.*)?$ $1$2 [R=301,L]
+
+
+
+
+
+
+
+
+# Remove the index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [QSA,L]
+
+#RewriteCond %{HTTP_HOST} !www.simpsn.com$ [NC]
+#RewriteCond %{HTTP_HOST} ^(www.)?([a-z0-9-]+).simpsn.com [NC]
+#RewriteRule (.*) index.php?page=%2 [NC,QSA]
+
+
+#RewriteCond Host: (.*)
+
+
+
+
+
+RewriteCond %{HTTP_HOST} ^simpsn.com/blog/ [NC]
+RewriteRule ^(.*)$ http://www.simpsn.com/blog/$1 [L]
+RedirectMatch 301 ^/blog(.*)$ http://blog.simpsn.com/$1  
+
+
+
+
+
+#RewriteCond %{HTTP_HOST} ^(www\.)?blog\.simpsn\.com$ [NC]
+#RewriteRule ^ http://www.simpsn.com/blog%{REQUEST_URI} [NE,R=301,L]
+#RewriteCond %{ENV:REDIRECT_SUBDOMAIN} ="" 
+#RewriteCond %{HTTP_HOST} ^([a-z0-9][-a-z0-9]+)\.simpsn\.com\.?(:80)?$ [NC] 
+#RewriteCond %{DOCUMENT_ROOT}/%1 -d 
+#RewriteRule ^(.*) %1/$1 [E=SUBDOMAIN:%1,L] 
+#RewriteRule ^ - [E=SUBDOMAIN:%{ENV:REDIRECT_SUBDOMAIN},L]
+
+

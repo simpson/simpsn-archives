@@ -21,22 +21,22 @@ _language: en
 _site_root: /
 
 # Name of your site
-_site_name: Another Awesome Statamic Site
+_site_name: David Simpson
 
 # Change the folder name for your content directory
 _content_root: _content
 
 # Used for permalinks
-_site_url: http://statamic.com
+_site_url: http://dev.simpsn.com
 
 # Folder name of your desired theme
-_theme: acadia
+_theme: simpsn
 
 # Entries should include timestamp YYYY-MM-DD-HHII
 _entry_timestamps: false
 
 # Global formatting for {{ date }} variables
-_date_format: 'F jS, Y'
+_date_format: 'M d, Y'
 
 # Global formatting for time variables
 _time_format: 'g:i.s a'
@@ -118,7 +118,7 @@ _environments:
     - '*.com'
 
 # Set to 'true' if you want to log system messages
-_log_enabled: false
+_log_enabled: true
 
 # What's the least-serious level of message you wish to record to the log?
 # Your available options:

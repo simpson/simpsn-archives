@@ -1,0 +1,22 @@
+---
+title: New epicio.com, wait don't cry!
+photo_url: http://cdn1.hubspot.com/hub/185303/file-287235876.jpg
+---
+![](http://cdn1.hubspot.com/hub/185303/file-287235876.jpg)
+
+A few months ago while looking around our website, it occurred to me that our site as a whole came off very **cold** and **corporate** feeling. I stood back and I tried to put myself in the shoes of someone who would visit the site that would be interested in design work. The first thing that came to mind is that our site showed no signs of creativity, no signs of life, no blips on the heart monitor.
+
+The second big thing was the poor navigation structure, there were to many points of navigation that were confusing which is a sure fire way to lose visitors and make your website complete junk. **Totally uncool, on both accounts.** It was at that point that I knew it was time to go back to the whiteboard and wireframe a new site to better align with our business vision. Coming out of that meeting we braced ourselves for a long road to rebranding our organization, let me guess what you are saying, "Wait aren't you guys supposed to be the one's that are good at this?!". Well we are but it is harder than you think when designing for yourself, especially when you are a perfectionist. Fortunately with enough [Starbucks](http://starbucks.com) caffeine and long nights we were able to persevere and bring this new energized site to you, the people we love. **Change is good, and we needed it so please don't cry.**
+
+<blockquote>On July 25, 2008, Google software engineers Jesse Alpert and Nissan Hajaj announced that Google Search had discovered one trillion unique URLs.</blockquote>
+<div class="content blog">
+We began to wade through all the different ideas of how we could rebrand our company to better align with our line of services. On July 25, 2008, Google software engineers Jesse Alpert and Nissan Hajaj announced that Google Search had discovered one trillion unique URLs. So there a few websites out there, and we want to try to stand our among them all. A long time ago, in a far away galaxy...... ok ok, not that long ago when we started Epicio we didn't have a clear vision of the services we offered. Over time we began to realize we really wanted to make our stake in the **web design, and cloud hosting market.** The old site still catered to the fact that we offered IT support, and a variety of other things that weren't really where our focus was. We do still offer those services to clients who contract with us for branding and identity strategy, but we don't do those services independent of that.
+
+As I stood in front of the **whiteboard** and began to wireframe a **simple creative UI,** the word that kept coming to mind was simplicity. I wanted to limit the busyness of the site and keep a clear concise framework for **simple navigation**. We limited the amount of horizontal menu items on the top and elected to put very few links at the bottom of the page. The other thing that we felt was important to us was showing you more about the people behind the scenes. The about page tells you a little about us, and our new blog lets you get a real in depth look at what we are thinking about and find interesting out there. In the end we feel like the end result was a website that better defines who we are as a business and tells you more about who we are as individuals.
+
+Before we wrap up this post there is one other subject I wanted to touch on. We will write a separate post dedicated to this, but for now we wanted to give a brief explanation on a largely talked about subject that we get a lot which is, **"What does Epicio mean?"**. First let us start with the phonetics of the word, it is pronounced e-pee-see-o. There is no dictionary definition as we made up the word, so we have the liberty to take literary rights as to how we define it. So for all you know we might just define Epicio as being the coolest web design company ever, you'll just have to wait and see. I don't know exactly what made this word come to my mind but I couldn't get it out so I knew it was meant to be. **Epicio is more like an attitude, it is being dedicated to providing the utmost level of integrity and hard work in all that we do.**
+
+So there you go. This is the new site, look around, see what you can find and please tell us what you think!
+
+PS. If you look at the site during different times of the day you'll see different themes showing, little easter eggs, where's waldo, and much more. We hope you find this new style as fun as we do!
+

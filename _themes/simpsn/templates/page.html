@@ -1,0 +1,31 @@
+<div class="row-fluid">
+	<div class="span12 widget-span widget-type-raw_jinja" data-widget-type="raw_jinja" data-x="0" data-w="12">
+		<div class="home-marquee" id="marquee">
+			<div class="inner" style="background-image: url('{{ photo_url }}');"></div>
+			<div class="headline" id="marquee-headline">
+				<h1><span id="hs_cos_wrapper_headline-text" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="text">{{ h1 }}</span></h1>
+			</div>
+			<div class="marquee-photo-credit">{{ photo_credit }}</div>
+		</div>
+	</div>
+</div>
+
+<div class="row-fluid">
+	<div class="span12">
+		<span id="hs_cos_wrapper_module_137773518187446" class="hs_cos_wrapper hs_cos_wrapper_widget_container hs_cos_wrapper_type_widget_container" style="" data-hs-cos-general-type="widget_container" data-hs-cos-type="widget_container">
+			<div id="hs_cos_wrapper_widget_285098680" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_raw_html" style="" data-hs-cos-general-type="widget" data-hs-cos-type="raw_html">
+				<div class="content">
+					{{ content|widont }}
+				</div>
+				{{ if current_url == "/" }}
+					<div class="wide-content no-margin">
+						<img src="http://cdn2.hubspot.net/hub/185303/file-606468943-jpg/images/website_assembla.jpg?t=1405470596163" class="screenshot">
+						<span class="cta screenshot"><a href="http://www.assembla.com" target="_blank">Visit www.assembla.com</a></span>
+					</div>
+				{{ endif }}
+			</div>
+		</span>
+	</div>
+</div>
+
+{{ theme:partial src="social-links" }}
