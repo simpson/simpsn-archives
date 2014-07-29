@@ -1,0 +1,6 @@
+---
+title: A Web Designer’s Best Friend
+---
+As a web designer & developer, I have mounds of books, bookmarks, notes, scraps of paper; whatever I can get my hands on at the moment to get ideas down. It’s rare that you would find a majority of these fundamental and inspirational parts as a whole. However, that’s precisely what you get with the [Web Developer’s Handbook](http://www.alvit.de/handbook/). This site is a culmination of resources, galleries, and other useful links that help the web designer be more productive and creative.
+
+From choosing color schemes, to css layout, to accessibility checkers, there’s something for every web developer on this page. The quick menu on the right gets you started, but digging through some of the links about particular subjects proves to be a valuable find. I have only looked through a handful of topics and I feel like I have a lifetime of looking left. Don’t forget to check out some of the industry information under ‘Creativity’, there are a couple great links there for more information.

@@ -1,0 +1,3 @@
+ERROR|Fri, 18 Jul 2014 22:07:51 -0400|API|Resource|/blog/joining-the-assembla-team|83.114.186.251|live|Could not find files to load the `name` plugin.
+ERROR|Fri, 18 Jul 2014 22:07:53 -0400|API|Resource|/blog/joining-the-assembla-team|69.171.230.116|live|Could not find files to load the `name` plugin.
+ERROR|Fri, 18 Jul 2014 22:10:55 -0400|API|Resource|/library|83.114.186.251|live|Could not find files to load the `photo_credit` plugin.

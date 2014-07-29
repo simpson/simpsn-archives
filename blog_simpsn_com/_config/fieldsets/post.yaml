@@ -1,0 +1,13 @@
+fields:
+  photo_url:
+    display: Main Photo URL
+    type: text
+
+  photo_credit:
+    display: Photo Credit
+    type: text
+  content:
+    type: markitup
+
+
+hide: true

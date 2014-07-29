@@ -1,0 +1,91 @@
+ERROR|Sun, 20 Jul 2014 00:14:14 -0400|visitor|content|/wp-login.php|146.0.73.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sun, 20 Jul 2014 00:57:21 -0400|visitor|content|/wp-login.php|146.0.73.134|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sun, 20 Jul 2014 01:40:22 -0400|visitor|content|/wp-login.php|146.0.73.134|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sun, 20 Jul 2014 02:23:20 -0400|visitor|content|/wp-login.php|146.0.73.134|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sun, 20 Jul 2014 03:07:35 -0400|visitor|content|/wp-login.php|146.0.74.208|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sun, 20 Jul 2014 03:53:35 -0400|visitor|content|/wp-login.php|5.39.219.25|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sun, 20 Jul 2014 04:39:31 -0400|visitor|content|/wp-login.php|146.0.73.135|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sun, 20 Jul 2014 05:25:16 -0400|visitor|content|/wp-login.php|146.0.73.156|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sun, 20 Jul 2014 06:10:47 -0400|visitor|content|/wp-login.php|146.0.79.23|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sun, 20 Jul 2014 06:42:52 -0400|visitor|content|/robots.txt|5.9.18.147|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sun, 20 Jul 2014 06:42:59 -0400|API|Resource|/library|5.9.18.147|live|Could not find files to load the `photo_credit` plugin.
+ERROR|Sun, 20 Jul 2014 06:57:12 -0400|visitor|content|/wp-login.php|146.0.73.133|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sun, 20 Jul 2014 07:44:41 -0400|visitor|content|/wp-login.php|146.0.74.212|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+INFO|Sun, 20 Jul 2014 08:27:30 -0400|site|favicon|/favicon.ico|50.189.72.181|live|The site favicon could not be found.
+ERROR|Sun, 20 Jul 2014 08:32:13 -0400|visitor|content|/wp-login.php|141.105.66.179|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sun, 20 Jul 2014 09:18:51 -0400|visitor|content|/wp-login.php|195.162.69.58|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sun, 20 Jul 2014 10:06:22 -0400|visitor|content|/wp-login.php|5.39.219.27|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sun, 20 Jul 2014 10:51:06 -0400|visitor|content|//six-reasons-why-i-love-sass|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sun, 20 Jul 2014 10:51:06 -0400|page|content|//six-reasons-why-i-love-sass|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="//six-reasons-why-i-love-sass">//six-reasons-why-i-love-sass</a>.
+ERROR|Sun, 20 Jul 2014 10:51:08 -0400|visitor|content|/six-reasons-why-i-love-sass|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sun, 20 Jul 2014 10:51:09 -0400|page|content|/six-reasons-why-i-love-sass|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/six-reasons-why-i-love-sass">/six-reasons-why-i-love-sass</a>.
+ERROR|Sun, 20 Jul 2014 10:51:19 -0400|visitor|content|/six-reasons-why-i-love-sass|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sun, 20 Jul 2014 10:51:19 -0400|page|content|/six-reasons-why-i-love-sass|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/six-reasons-why-i-love-sass">/six-reasons-why-i-love-sass</a>.
+ERROR|Sun, 20 Jul 2014 11:03:21 -0400|visitor|content|/rss.xml|124.248.249.149|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sun, 20 Jul 2014 11:14:43 -0400|visitor|content|/blog.html|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sun, 20 Jul 2014 11:14:43 -0400|page|content|/blog.html|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/blog.html">/blog.html</a>.
+ERROR|Sun, 20 Jul 2014 11:16:25 -0400|external|content|/bringing-clarity-to-your-content|79.114.51.132|live|404 - Page not found. User clicked an outside bad link at <a href="http://simpsn.com/blog">http://simpsn.com/blog</a>.
+ERROR|Sun, 20 Jul 2014 11:16:43 -0400|page|content|/bringing-clarity-to-your-content|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/bringing-clarity-to-your-content">/bringing-clarity-to-your-content</a>.
+ERROR|Sun, 20 Jul 2014 11:16:44 -0400|external|content|/bringing-clarity-to-your-content|79.114.51.132|live|404 - Page not found. User clicked an outside bad link at <a href="http://simpsn.com/blog">http://simpsn.com/blog</a>.
+ERROR|Sun, 20 Jul 2014 11:17:12 -0400|page|content|/bringing-clarity-to-your-content|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/bringing-clarity-to-your-content">/bringing-clarity-to-your-content</a>.
+ERROR|Sun, 20 Jul 2014 11:17:35 -0400|external|content|/joining-the-assembla-team|79.114.51.132|live|404 - Page not found. User clicked an outside bad link at <a href="http://simpsn.com/blog">http://simpsn.com/blog</a>.
+ERROR|Sun, 20 Jul 2014 11:17:35 -0400|page|content|/joining-the-assembla-team|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/joining-the-assembla-team">/joining-the-assembla-team</a>.
+ERROR|Sun, 20 Jul 2014 11:19:55 -0400|external|content|/designers-can-change-the-world|79.114.51.132|live|404 - Page not found. User clicked an outside bad link at <a href="http://simpsn.com/blog">http://simpsn.com/blog</a>.
+ERROR|Sun, 20 Jul 2014 11:19:56 -0400|page|content|/designers-can-change-the-world|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/designers-can-change-the-world">/designers-can-change-the-world</a>.
+ERROR|Sun, 20 Jul 2014 11:20:41 -0400|external|content|/designers-can-change-the-world|79.114.51.132|live|404 - Page not found. User clicked an outside bad link at <a href="http://simpsn.com/blog">http://simpsn.com/blog</a>.
+ERROR|Sun, 20 Jul 2014 11:20:42 -0400|page|content|/designers-can-change-the-world|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/designers-can-change-the-world">/designers-can-change-the-world</a>.
+ERROR|Sun, 20 Jul 2014 11:20:55 -0400|external|content|/joining-the-assembla-team|79.114.51.132|live|404 - Page not found. User clicked an outside bad link at <a href="http://simpsn.com/blog">http://simpsn.com/blog</a>.
+ERROR|Sun, 20 Jul 2014 11:20:56 -0400|page|content|/joining-the-assembla-team|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/joining-the-assembla-team">/joining-the-assembla-team</a>.
+ERROR|Sun, 20 Jul 2014 11:28:35 -0400|page|content|/is-url-shortening-important|162.244.12.179|live|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Sun, 20 Jul 2014 11:31:46 -0400|visitor|content|/is-url-shortening-important|185.7.80.228|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sun, 20 Jul 2014 11:38:00 -0400|page|content|/robots.txt|101.226.167.204|live|404 - Page not found. There is a bad link on <a href="/robots.txt">/robots.txt</a>.
+ERROR|Sun, 20 Jul 2014 11:41:16 -0400|visitor|content|/wp-login.php|146.0.74.212|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sun, 20 Jul 2014 12:02:25 -0400|page|content|/is-url-shortening-important|107.150.63.108|live|404 - Page not found. There is a bad link on <a href="/is-url-shortening-important">/is-url-shortening-important</a>.
+ERROR|Sun, 20 Jul 2014 12:27:25 -0400|visitor|content|/wp-login.php|5.39.219.27|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sun, 20 Jul 2014 13:00:00 -0400|page|content|/is-url-shortening-important|162.244.12.179|live|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Sun, 20 Jul 2014 13:14:14 -0400|visitor|content|/wp-login.php|146.0.73.156|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sun, 20 Jul 2014 13:55:00 -0400|visitor|content|/robots.txt|199.16.156.124|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sun, 20 Jul 2014 13:55:01 -0400|visitor|content|/six-reasons-why-i-love-sass|199.16.156.124|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sun, 20 Jul 2014 14:00:31 -0400|visitor|content|/wp-login.php|141.105.66.179|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sun, 20 Jul 2014 14:08:36 -0400|visitor|content|/robots.txt|208.115.113.83|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sun, 20 Jul 2014 14:25:23 -0400|visitor|content|/robots.txt|157.55.39.64|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sun, 20 Jul 2014 14:28:17 -0400|visitor|content|/_themes/simpsn/img/favicon.png|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sun, 20 Jul 2014 14:38:52 -0400|visitor|content|/six-reasons-why-i-love-sass|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sun, 20 Jul 2014 14:38:53 -0400|page|content|/six-reasons-why-i-love-sass|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/six-reasons-why-i-love-sass">/six-reasons-why-i-love-sass</a>.
+ERROR|Sun, 20 Jul 2014 14:38:54 -0400|visitor|content|/six-reasons-why-i-love-sass|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sun, 20 Jul 2014 14:38:55 -0400|page|content|/six-reasons-why-i-love-sass|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/six-reasons-why-i-love-sass">/six-reasons-why-i-love-sass</a>.
+ERROR|Sun, 20 Jul 2014 14:40:28 -0400|visitor|content|/bringing-clarity-to-your-content|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sun, 20 Jul 2014 14:40:28 -0400|page|content|/bringing-clarity-to-your-content|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/bringing-clarity-to-your-content">/bringing-clarity-to-your-content</a>.
+ERROR|Sun, 20 Jul 2014 14:47:42 -0400|visitor|content|/wp-login.php|146.0.74.234|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sun, 20 Jul 2014 15:11:10 -0400|visitor|content|/robots.txt|208.43.251.181|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sun, 20 Jul 2014 15:19:27 -0400|visitor|content|/blog/index.php|211.144.76.143|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sun, 20 Jul 2014 15:35:00 -0400|visitor|content|/wp-login.php|146.0.73.156|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sun, 20 Jul 2014 15:57:00 -0400|visitor|content|/a-new-chapter-in-life-hello-hubspot|208.115.113.83|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sun, 20 Jul 2014 16:11:26 -0400|page|content|/is-url-shortening-important|50.115.175.164|live|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Sun, 20 Jul 2014 16:21:07 -0400|visitor|content|/wp-login.php|146.0.73.15|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sun, 20 Jul 2014 17:08:58 -0400|visitor|content|/wp-login.php|146.0.74.28|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sun, 20 Jul 2014 17:11:10 -0400|page|content|/is-url-shortening-important|162.244.12.179|live|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Sun, 20 Jul 2014 17:20:03 -0400|page|content|/is-url-shortening-important|162.244.10.211|live|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Sun, 20 Jul 2014 17:31:29 -0400|visitor|content|/six-reasons-why-i-love-sass|76.186.209.186|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sun, 20 Jul 2014 17:56:50 -0400|visitor|content|/wp-login.php|146.0.74.212|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sun, 20 Jul 2014 18:04:25 -0400|visitor|content|/rss.xml|65.19.138.33|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sun, 20 Jul 2014 18:05:21 -0400|page|content|/is-url-shortening-important|162.244.12.179|live|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Sun, 20 Jul 2014 18:44:34 -0400|visitor|content|/wp-login.php|146.0.73.155|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sun, 20 Jul 2014 18:46:22 -0400|page|content|/is-url-shortening-important|162.244.12.179|live|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Sun, 20 Jul 2014 19:22:01 -0400|visitor|content|/rss.xml|124.248.249.149|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sun, 20 Jul 2014 19:23:58 -0400|visitor|content|//joining-the-assembla-team|50.189.72.181|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sun, 20 Jul 2014 19:23:58 -0400|page|content|//joining-the-assembla-team|50.189.72.181|live|404 - Page not found. There is a bad link on <a href="//joining-the-assembla-team">//joining-the-assembla-team</a>.
+ERROR|Sun, 20 Jul 2014 19:24:04 -0400|visitor|content|/joining-the-assembla-team|50.189.72.181|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sun, 20 Jul 2014 19:24:04 -0400|page|content|/joining-the-assembla-team|50.189.72.181|live|404 - Page not found. There is a bad link on <a href="/joining-the-assembla-team">/joining-the-assembla-team</a>.
+ERROR|Sun, 20 Jul 2014 19:31:12 -0400|visitor|content|/wp-login.php|146.0.73.15|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sun, 20 Jul 2014 19:32:10 -0400|visitor|content|/robots.txt|66.249.69.17|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sun, 20 Jul 2014 20:19:41 -0400|visitor|content|/wp-login.php|146.0.73.134|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sun, 20 Jul 2014 20:52:09 -0400|API|Resource|/library|66.249.69.9|live|Could not find files to load the `photo_credit` plugin.
+ERROR|Sun, 20 Jul 2014 21:08:15 -0400|visitor|content|/wp-login.php|146.0.74.170|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sun, 20 Jul 2014 21:56:08 -0400|visitor|content|/wp-login.php|5.39.219.27|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sun, 20 Jul 2014 22:44:01 -0400|visitor|content|/wp-login.php|195.162.69.58|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sun, 20 Jul 2014 23:21:42 -0400|visitor|content|/rss.xml|108.171.241.230|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sun, 20 Jul 2014 23:32:25 -0400|visitor|content|/wp-login.php|5.39.216.2|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sun, 20 Jul 2014 23:48:04 -0400|visitor|content|/six-reasons-why-i-love-sass|76.186.209.186|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sun, 20 Jul 2014 23:50:14 -0400|visitor|content|/is-url-shortening-important|5.255.95.27|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sun, 20 Jul 2014 23:53:09 -0400|visitor|content|/robots.txt|208.115.111.66|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.

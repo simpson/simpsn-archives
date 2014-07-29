@@ -1,0 +1,28 @@
+title: Standard Page
+
+fields:
+  _template:
+    display: Template
+    type: templates
+
+  h1:
+    display: Title 1
+    type: text
+
+  photo_url:
+    display: Main Photo URL
+    type: text
+
+  photo_credit:
+    display: Photo Credit
+    type: text
+
+#  upload:
+#    type: file
+#    destination: assets/img/blog/
+
+  content:
+    display: Page Content
+    required: false
+    default:
+    type: markitup

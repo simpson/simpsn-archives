@@ -1,0 +1,62 @@
+<div class="row-fluid">
+	<div class="span12 widget-span widget-type-raw_jinja" data-widget-type="raw_jinja" data-x="0" data-w="12">
+		<div class="home-marquee" id="marquee">
+			<div class="inner" style="background-image: url('{{ photo_url }}');"></div>
+			<div class="headline" id="marquee-headline">
+				<h1><span id="hs_cos_wrapper_headline-text" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="text">{{ h1 }}</span></h1>
+			</div>
+			{{ if photo_credit }}<div class="marquee-photo-credit">{{ photo_credit }}</div>{{ endif }}
+		</div>
+	</div>
+</div>
+
+<div class="row-fluid">
+	<div class="span12">
+		<span class="hs_cos_wrapper hs_cos_wrapper_widget_container hs_cos_wrapper_type_widget_container" style="" data-hs-cos-general-type="widget_container" data-hs-cos-type="widget_container">
+			<div class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_raw_html" style="" data-hs-cos-general-type="widget" data-hs-cos-type="raw_html">
+				<div class="content">
+					{{ content|widont }}
+				</div>
+			</div>
+			<div class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="rich_text">
+				
+				{{ if current_url == "/work" }}
+					
+					{{ entries:listing folder="work" }}
+						<div class="content card">
+							<img src="{{ screenshot }}" alt="Screenshot of the {{ title }} home page">
+							
+							{{ if work_url }}
+								<h2><a href="{{ work_url }}">{{ title }}</a></h2>
+							{{ else }}
+								<h2>{{ title }}</h2>
+							{{ endif }}
+							
+							{{ content }}
+						</div>
+					{{ /entries:listing }}
+
+				{{ elseif current_url == "/free-stuff" }}
+					
+					{{ entries:listing folder="free-stuff" }}
+						<div class="content card">
+							<img src="{{ screenshot }}" alt="Screenshot of the {{ title }} home page">
+							
+							{{ if work_url }}
+								<h2><a href="{{ work_url }}">{{ title }}</a></h2>
+							{{ else }}
+								<h2>{{ title }}</h2>
+							{{ endif }}
+							
+							{{ content }}
+						</div>
+					{{ /entries:listing }}
+
+				{{ endif }}
+
+			</div>
+		</span>
+	</div>
+</div>
+
+{{ theme:partial src="social-links" }}

@@ -1,0 +1,10 @@
+---
+email: david@simpsn.com
+first_name: David
+last_name: Simpson
+password: ""
+password_hash: $2a$08$dvFTg4t8YTgZGolnkshD0uHz5LxYhq80mr6Kxzo6VNZwaciwiUYGy
+roles:
+  - admin
+_uid: HYlN8x53ca968506465cxmh7gDS
+---

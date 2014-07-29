@@ -1,0 +1,212 @@
+ERROR|Sat, 19 Jul 2014 09:36:10 -0400|API|Resource|/library|83.114.186.251|live|Could not find files to load the `photo_credit` plugin.
+INFO|Sat, 19 Jul 2014 09:55:19 -0400|site|favicon|/favicon.ico|50.189.72.181|live|The site favicon could not be found.
+ERROR|Sat, 19 Jul 2014 10:01:18 -0400|visitor|content|/wp-login.php|91.218.244.131|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+INFO|Sat, 19 Jul 2014 10:04:12 -0400|site|favicon|/favicon.ico|50.189.72.181|live|The site favicon could not be found.
+INFO|Sat, 19 Jul 2014 10:05:50 -0400|site|favicon|/favicon.ico|50.189.72.181|live|The site favicon could not be found.
+INFO|Sat, 19 Jul 2014 10:15:21 -0400|site|favicon|/favicon.ico|24.209.54.114|live|The site favicon could not be found.
+ERROR|Sat, 19 Jul 2014 10:17:05 -0400|API|Resource|/library|24.209.54.114|live|Could not find files to load the `photo_credit` plugin.
+ERROR|Sat, 19 Jul 2014 10:24:28 -0400|visitor|content|/robots.txt|37.58.100.238|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 10:42:12 -0400|visitor|content|/robots.txt|54.211.244.74|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 10:44:04 -0400|visitor|content|/wp-login.php|146.0.74.208|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+INFO|Sat, 19 Jul 2014 11:24:47 -0400|site|favicon|/favicon.ico|50.189.72.181|live|The site favicon could not be found.
+ERROR|Sat, 19 Jul 2014 11:27:27 -0400|visitor|content|/wp-login.php|146.0.73.156|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 11:30:06 -0400|external|content|/blog/index.php|50.189.72.181|live|404 - Page not found. User clicked an outside bad link at <a href="http://blog.simpsn.com/blog">http://blog.simpsn.com/blog</a>.
+ERROR|Sat, 19 Jul 2014 11:30:06 -0400|page|content|/blog/index.php|50.189.72.181|live|404 - Page not found. There is a bad link on <a href="/blog/index.php">/blog/index.php</a>.
+ERROR|Sat, 19 Jul 2014 11:30:08 -0400|external|content|/blog/index.php|50.189.72.181|live|404 - Page not found. User clicked an outside bad link at <a href="http://blog.simpsn.com/blog">http://blog.simpsn.com/blog</a>.
+ERROR|Sat, 19 Jul 2014 11:30:09 -0400|page|content|/blog/index.php|50.189.72.181|live|404 - Page not found. There is a bad link on <a href="/blog/index.php">/blog/index.php</a>.
+ERROR|Sat, 19 Jul 2014 11:31:37 -0400|API|Resource|/library|50.189.72.181|live|Could not find files to load the `photo_credit` plugin.
+ERROR|Sat, 19 Jul 2014 11:37:16 -0400|visitor|content|/six-reasons-why-i-love-sass|83.114.186.251|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 11:37:16 -0400|page|content|/six-reasons-why-i-love-sass|83.114.186.251|live|404 - Page not found. There is a bad link on <a href="/six-reasons-why-i-love-sass">/six-reasons-why-i-love-sass</a>.
+ERROR|Sat, 19 Jul 2014 11:41:26 -0400|API|Resource|/library|50.189.72.181|live|Could not find files to load the `photo_credit` plugin.
+ERROR|Sat, 19 Jul 2014 11:51:59 -0400|visitor|content|/robots.txt|54.237.43.151|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 11:51:59 -0400|visitor|content|/favicon.png|54.237.43.151|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 11:51:59 -0400|visitor|content|/favicon.gif|54.237.43.151|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+INFO|Sat, 19 Jul 2014 11:51:59 -0400|site|favicon|/favicon.ico|54.237.43.151|live|The site favicon could not be found.
+ERROR|Sat, 19 Jul 2014 12:03:05 -0400|visitor|content|/replacing-deprecated-functions-in-phpthumb-to-be-compatible-with-php-version-5-3-0|208.115.113.83|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 12:10:16 -0400|visitor|content|/wp-login.php|5.39.218.37|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 12:17:11 -0400|visitor|content|/joining-the-assembla-team|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 12:17:13 -0400|page|content|/joining-the-assembla-team|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/joining-the-assembla-team">/joining-the-assembla-team</a>.
+ERROR|Sat, 19 Jul 2014 12:18:13 -0400|page|content|/six-reasons-why-i-love-sass|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/blog">/blog</a>.
+ERROR|Sat, 19 Jul 2014 12:18:14 -0400|page|content|/six-reasons-why-i-love-sass|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/six-reasons-why-i-love-sass">/six-reasons-why-i-love-sass</a>.
+ERROR|Sat, 19 Jul 2014 12:18:40 -0400|page|content|/how-i-built-my-new-website-in-48-hours|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/blog">/blog</a>.
+ERROR|Sat, 19 Jul 2014 12:18:41 -0400|page|content|/how-i-built-my-new-website-in-48-hours|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/how-i-built-my-new-website-in-48-hours">/how-i-built-my-new-website-in-48-hours</a>.
+ERROR|Sat, 19 Jul 2014 12:18:56 -0400|visitor|content|/how-i-built-my-new-website-in-48-hours|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 12:18:58 -0400|page|content|/how-i-built-my-new-website-in-48-hours|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/how-i-built-my-new-website-in-48-hours">/how-i-built-my-new-website-in-48-hours</a>.
+ERROR|Sat, 19 Jul 2014 12:19:10 -0400|page|content|/mailbox-app-for-the-iphone|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/blog">/blog</a>.
+ERROR|Sat, 19 Jul 2014 12:19:11 -0400|page|content|/mailbox-app-for-the-iphone|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/mailbox-app-for-the-iphone">/mailbox-app-for-the-iphone</a>.
+ERROR|Sat, 19 Jul 2014 12:23:55 -0400|page|content|/something-big-is-coming-2|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/blog">/blog</a>.
+ERROR|Sat, 19 Jul 2014 12:23:56 -0400|page|content|/something-big-is-coming-2|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/something-big-is-coming-2">/something-big-is-coming-2</a>.
+ERROR|Sat, 19 Jul 2014 12:24:01 -0400|page|content|/something-big-is-coming-2|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/blog">/blog</a>.
+ERROR|Sat, 19 Jul 2014 12:24:01 -0400|page|content|/something-big-is-coming-2|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/something-big-is-coming-2">/something-big-is-coming-2</a>.
+ERROR|Sat, 19 Jul 2014 12:24:02 -0400|page|content|/something-big-is-coming-2|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/blog">/blog</a>.
+ERROR|Sat, 19 Jul 2014 12:24:03 -0400|page|content|/something-big-is-coming-2|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/something-big-is-coming-2">/something-big-is-coming-2</a>.
+ERROR|Sat, 19 Jul 2014 12:24:21 -0400|page|content|/new-epicio-com-wait-dont-cry|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/blog">/blog</a>.
+ERROR|Sat, 19 Jul 2014 12:24:22 -0400|page|content|/new-epicio-com-wait-dont-cry|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/new-epicio-com-wait-dont-cry">/new-epicio-com-wait-dont-cry</a>.
+ERROR|Sat, 19 Jul 2014 12:25:06 -0400|page|content|/new-epicio-com-wait-dont-cry|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/blog">/blog</a>.
+ERROR|Sat, 19 Jul 2014 12:25:06 -0400|page|content|/new-epicio-com-wait-dont-cry|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/new-epicio-com-wait-dont-cry">/new-epicio-com-wait-dont-cry</a>.
+ERROR|Sat, 19 Jul 2014 12:25:08 -0400|page|content|/new-epicio-com-wait-dont-cry|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/blog">/blog</a>.
+ERROR|Sat, 19 Jul 2014 12:25:08 -0400|page|content|/new-epicio-com-wait-dont-cry|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/new-epicio-com-wait-dont-cry">/new-epicio-com-wait-dont-cry</a>.
+ERROR|Sat, 19 Jul 2014 12:25:33 -0400|page|content|/how-i-got-simpson-on-instagram|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/blog">/blog</a>.
+ERROR|Sat, 19 Jul 2014 12:25:34 -0400|page|content|/how-i-got-simpson-on-instagram|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/how-i-got-simpson-on-instagram">/how-i-got-simpson-on-instagram</a>.
+ERROR|Sat, 19 Jul 2014 12:28:16 -0400|visitor|content|/free-stuff/|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 12:28:16 -0400|page|content|/free-stuff/|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/free-stuff/">/free-stuff/</a>.
+ERROR|Sat, 19 Jul 2014 12:28:18 -0400|API|Resource|/library|79.114.51.132|live|Could not find files to load the `photo_credit` plugin.
+ERROR|Sat, 19 Jul 2014 12:28:51 -0400|visitor|content|/blog/|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 12:28:52 -0400|page|content|/blog/|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/blog/">/blog/</a>.
+ERROR|Sat, 19 Jul 2014 12:29:13 -0400|template|parser|/blog/what-is-responsive-and-adaptive-web-design|79.114.51.132|live|Cannot display tag `{{ photo_url }}` because it is a list, not a single value. To display list values, use a tag-pair.
+ERROR|Sat, 19 Jul 2014 12:29:13 -0400|template|parser|/blog/what-is-responsive-and-adaptive-web-design|79.114.51.132|live|Cannot display tag `{{ photo_url }}` because it is a list, not a single value. To display list values, use a tag-pair.
+ERROR|Sat, 19 Jul 2014 12:29:14 -0400|template|parser|/blog/what-is-responsive-and-adaptive-web-design|79.114.51.132|live|Cannot display tag `{{ photo_url }}` because it is a list, not a single value. To display list values, use a tag-pair.
+ERROR|Sat, 19 Jul 2014 12:29:14 -0400|template|parser|/blog/what-is-responsive-and-adaptive-web-design|79.114.51.132|live|Cannot display tag `{{ photo_url }}` because it is a list, not a single value. To display list values, use a tag-pair.
+ERROR|Sat, 19 Jul 2014 12:29:14 -0400|template|parser|/blog/what-is-responsive-and-adaptive-web-design|173.252.110.115|live|Cannot display tag `{{ photo_url }}` because it is a list, not a single value. To display list values, use a tag-pair.
+ERROR|Sat, 19 Jul 2014 12:29:14 -0400|template|parser|/blog/what-is-responsive-and-adaptive-web-design|173.252.110.115|live|Cannot display tag `{{ photo_url }}` because it is a list, not a single value. To display list values, use a tag-pair.
+ERROR|Sat, 19 Jul 2014 12:34:43 -0400|visitor|content|/blog/|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 12:34:43 -0400|page|content|/blog/|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/blog/">/blog/</a>.
+ERROR|Sat, 19 Jul 2014 12:35:00 -0400|visitor|content|/blog/|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 12:35:01 -0400|page|content|/blog/|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/blog/">/blog/</a>.
+ERROR|Sat, 19 Jul 2014 12:36:14 -0400|visitor|content|/how-i-built-my-new-website-in-48-hours|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 12:36:14 -0400|page|content|/how-i-built-my-new-website-in-48-hours|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/how-i-built-my-new-website-in-48-hours">/how-i-built-my-new-website-in-48-hours</a>.
+ERROR|Sat, 19 Jul 2014 12:38:04 -0400|visitor|content|/how-i-built-my-new-website-in-48-hours|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 12:38:04 -0400|page|content|/how-i-built-my-new-website-in-48-hours|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/how-i-built-my-new-website-in-48-hours">/how-i-built-my-new-website-in-48-hours</a>.
+ERROR|Sat, 19 Jul 2014 12:38:59 -0400|visitor|content|/blog/|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 12:39:00 -0400|page|content|/blog/|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/blog/">/blog/</a>.
+ERROR|Sat, 19 Jul 2014 12:39:15 -0400|page|content|/is-url-shortening-important|162.244.10.211|live|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Sat, 19 Jul 2014 12:41:27 -0400|visitor|content|/blog/|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 12:41:28 -0400|page|content|/blog/|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/blog/">/blog/</a>.
+ERROR|Sat, 19 Jul 2014 12:44:14 -0400|visitor|content|/how-i-got-simpson-on-instagram|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 12:44:15 -0400|page|content|/how-i-got-simpson-on-instagram|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/how-i-got-simpson-on-instagram">/how-i-got-simpson-on-instagram</a>.
+ERROR|Sat, 19 Jul 2014 12:45:39 -0400|visitor|content|/blog/|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 12:45:39 -0400|page|content|/blog/|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/blog/">/blog/</a>.
+ERROR|Sat, 19 Jul 2014 12:47:01 -0400|visitor|content|/designers-can-change-the-world|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 12:47:01 -0400|page|content|/designers-can-change-the-world|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/designers-can-change-the-world">/designers-can-change-the-world</a>.
+ERROR|Sat, 19 Jul 2014 12:47:03 -0400|visitor|content|/designers-can-change-the-world|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 12:47:04 -0400|page|content|/designers-can-change-the-world|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/designers-can-change-the-world">/designers-can-change-the-world</a>.
+ERROR|Sat, 19 Jul 2014 12:47:04 -0400|visitor|content|/designers-can-change-the-world|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 12:47:04 -0400|visitor|content|/designers-can-change-the-world|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 12:47:05 -0400|visitor|content|/designers-can-change-the-world|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 12:47:05 -0400|page|content|/designers-can-change-the-world|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/designers-can-change-the-world">/designers-can-change-the-world</a>.
+ERROR|Sat, 19 Jul 2014 12:47:39 -0400|visitor|content|/designers-can-change-the-world|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 12:47:39 -0400|page|content|/designers-can-change-the-world|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/designers-can-change-the-world">/designers-can-change-the-world</a>.
+ERROR|Sat, 19 Jul 2014 12:47:41 -0400|visitor|content|/designers-can-change-the-world|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 12:47:41 -0400|page|content|/designers-can-change-the-world|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/designers-can-change-the-world">/designers-can-change-the-world</a>.
+ERROR|Sat, 19 Jul 2014 12:52:46 -0400|visitor|content|/wp-login.php|146.0.74.206|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 13:07:29 -0400|visitor|content|/how-i-built-my-new-website-in-48-hours|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 13:07:29 -0400|page|content|/how-i-built-my-new-website-in-48-hours|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/how-i-built-my-new-website-in-48-hours">/how-i-built-my-new-website-in-48-hours</a>.
+INFO|Sat, 19 Jul 2014 13:17:13 -0400|site|favicon|/favicon.ico|79.114.51.132|live|The site favicon could not be found.
+ERROR|Sat, 19 Jul 2014 13:19:05 -0400|visitor|content|/how-i-built-my-new-website-in-48-hours|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 13:19:05 -0400|page|content|/how-i-built-my-new-website-in-48-hours|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/how-i-built-my-new-website-in-48-hours">/how-i-built-my-new-website-in-48-hours</a>.
+ERROR|Sat, 19 Jul 2014 13:19:24 -0400|visitor|content|/how-i-built-my-new-website-in-48-hours|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 13:19:25 -0400|page|content|/how-i-built-my-new-website-in-48-hours|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/how-i-built-my-new-website-in-48-hours">/how-i-built-my-new-website-in-48-hours</a>.
+ERROR|Sat, 19 Jul 2014 13:19:26 -0400|visitor|content|/how-i-built-my-new-website-in-48-hours|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 13:19:27 -0400|page|content|/how-i-built-my-new-website-in-48-hours|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/how-i-built-my-new-website-in-48-hours">/how-i-built-my-new-website-in-48-hours</a>.
+ERROR|Sat, 19 Jul 2014 13:19:27 -0400|visitor|content|/how-i-built-my-new-website-in-48-hours|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 13:19:28 -0400|page|content|/how-i-built-my-new-website-in-48-hours|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/how-i-built-my-new-website-in-48-hours">/how-i-built-my-new-website-in-48-hours</a>.
+ERROR|Sat, 19 Jul 2014 13:20:39 -0400|visitor|content|/how-i-built-my-new-website-in-48-hours|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 13:20:40 -0400|page|content|/how-i-built-my-new-website-in-48-hours|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/how-i-built-my-new-website-in-48-hours">/how-i-built-my-new-website-in-48-hours</a>.
+ERROR|Sat, 19 Jul 2014 13:20:43 -0400|visitor|content|/how-i-built-my-new-website-in-48-hours|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 13:20:43 -0400|page|content|/how-i-built-my-new-website-in-48-hours|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/how-i-built-my-new-website-in-48-hours">/how-i-built-my-new-website-in-48-hours</a>.
+ERROR|Sat, 19 Jul 2014 13:21:04 -0400|template|parser|/blog/what-is-responsive-and-adaptive-web-design|79.114.51.132|live|Cannot display tag `{{ photo_url }}` because it is a list, not a single value. To display list values, use a tag-pair.
+ERROR|Sat, 19 Jul 2014 13:21:04 -0400|template|parser|/blog/what-is-responsive-and-adaptive-web-design|79.114.51.132|live|Cannot display tag `{{ photo_url }}` because it is a list, not a single value. To display list values, use a tag-pair.
+ERROR|Sat, 19 Jul 2014 13:21:05 -0400|template|parser|/blog/what-is-responsive-and-adaptive-web-design|79.114.51.132|live|Cannot display tag `{{ photo_url }}` because it is a list, not a single value. To display list values, use a tag-pair.
+ERROR|Sat, 19 Jul 2014 13:21:05 -0400|template|parser|/blog/what-is-responsive-and-adaptive-web-design|79.114.51.132|live|Cannot display tag `{{ photo_url }}` because it is a list, not a single value. To display list values, use a tag-pair.
+ERROR|Sat, 19 Jul 2014 13:21:06 -0400|template|parser|/blog/what-is-responsive-and-adaptive-web-design|173.252.110.112|live|Cannot display tag `{{ photo_url }}` because it is a list, not a single value. To display list values, use a tag-pair.
+ERROR|Sat, 19 Jul 2014 13:21:06 -0400|template|parser|/blog/what-is-responsive-and-adaptive-web-design|173.252.110.112|live|Cannot display tag `{{ photo_url }}` because it is a list, not a single value. To display list values, use a tag-pair.
+ERROR|Sat, 19 Jul 2014 13:21:08 -0400|visitor|content|/what-is-responsive-and-adaptive-web-design|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 13:21:08 -0400|page|content|/what-is-responsive-and-adaptive-web-design|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/what-is-responsive-and-adaptive-web-design">/what-is-responsive-and-adaptive-web-design</a>.
+ERROR|Sat, 19 Jul 2014 13:21:15 -0400|visitor|content|/what-is-responsive-and-adaptive-web-design|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 13:21:16 -0400|page|content|/what-is-responsive-and-adaptive-web-design|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/what-is-responsive-and-adaptive-web-design">/what-is-responsive-and-adaptive-web-design</a>.
+ERROR|Sat, 19 Jul 2014 13:22:04 -0400|visitor|content|/what-is-responsive-and-adaptive-web-design|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 13:22:04 -0400|page|content|/what-is-responsive-and-adaptive-web-design|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/what-is-responsive-and-adaptive-web-design">/what-is-responsive-and-adaptive-web-design</a>.
+ERROR|Sat, 19 Jul 2014 13:26:52 -0400|visitor|content|/one-weekend-5-million-iphone-5s-sold|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 13:26:53 -0400|page|content|/one-weekend-5-million-iphone-5s-sold|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/one-weekend-5-million-iphone-5s-sold">/one-weekend-5-million-iphone-5s-sold</a>.
+ERROR|Sat, 19 Jul 2014 13:33:03 -0400|visitor|content|/one-weekend-5-million-iphone-5s-sold|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 13:33:03 -0400|page|content|/one-weekend-5-million-iphone-5s-sold|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/one-weekend-5-million-iphone-5s-sold">/one-weekend-5-million-iphone-5s-sold</a>.
+ERROR|Sat, 19 Jul 2014 13:33:54 -0400|visitor|content|/how-i-got-simpson-on-twitter|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 13:33:54 -0400|page|content|/how-i-got-simpson-on-twitter|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/how-i-got-simpson-on-twitter">/how-i-got-simpson-on-twitter</a>.
+ERROR|Sat, 19 Jul 2014 13:35:07 -0400|visitor|content|/how-i-got-simpson-on-twitter|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 13:35:07 -0400|page|content|/how-i-got-simpson-on-twitter|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/how-i-got-simpson-on-twitter">/how-i-got-simpson-on-twitter</a>.
+ERROR|Sat, 19 Jul 2014 13:35:09 -0400|visitor|content|/how-i-got-simpson-on-twitter|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 13:35:10 -0400|page|content|/how-i-got-simpson-on-twitter|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/how-i-got-simpson-on-twitter">/how-i-got-simpson-on-twitter</a>.
+ERROR|Sat, 19 Jul 2014 13:35:11 -0400|visitor|content|/how-i-got-simpson-on-twitter|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 13:35:11 -0400|page|content|/how-i-got-simpson-on-twitter|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/how-i-got-simpson-on-twitter">/how-i-got-simpson-on-twitter</a>.
+ERROR|Sat, 19 Jul 2014 13:35:11 -0400|visitor|content|/how-i-got-simpson-on-twitter|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 13:35:12 -0400|visitor|content|/how-i-got-simpson-on-twitter|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 13:35:12 -0400|visitor|content|/how-i-got-simpson-on-twitter|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 13:35:12 -0400|visitor|content|/how-i-got-simpson-on-twitter|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 13:35:12 -0400|visitor|content|/how-i-got-simpson-on-twitter|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 13:35:12 -0400|visitor|content|/how-i-got-simpson-on-twitter|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 13:35:13 -0400|visitor|content|/how-i-got-simpson-on-twitter|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 13:35:13 -0400|page|content|/how-i-got-simpson-on-twitter|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/how-i-got-simpson-on-twitter">/how-i-got-simpson-on-twitter</a>.
+ERROR|Sat, 19 Jul 2014 13:35:38 -0400|visitor|content|/wp-login.php|146.0.73.156|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 13:36:41 -0400|visitor|content|/rss.xml|100.42.229.240|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 13:59:26 -0400|external|content|/the-hubspot-cos|23.24.238.90|live|404 - Page not found. User clicked an outside bad link at <a href="https://www.google.com/">https://www.google.com/</a>.
+ERROR|Sat, 19 Jul 2014 13:59:27 -0400|page|content|/the-hubspot-cos|23.24.238.90|live|404 - Page not found. There is a bad link on <a href="/the-hubspot-cos">/the-hubspot-cos</a>.
+ERROR|Sat, 19 Jul 2014 14:17:56 -0400|visitor|content|/wp-login.php|146.0.78.9|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 15:01:19 -0400|visitor|content|/wp-login.php|146.0.74.234|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 15:23:14 -0400|visitor|content|/robots.txt|157.55.39.182|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 15:25:24 -0400|visitor|content|/happy-50th-birthday-lego|157.55.39.182|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 15:42:55 -0400|visitor|content|/joining-the-assembla-team|50.189.72.181|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 15:42:56 -0400|page|content|/joining-the-assembla-team|50.189.72.181|live|404 - Page not found. There is a bad link on <a href="/joining-the-assembla-team">/joining-the-assembla-team</a>.
+ERROR|Sat, 19 Jul 2014 15:43:59 -0400|visitor|content|/wp-login.php|146.0.79.23|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 15:53:11 -0400|visitor|content|/rss.xml|66.249.74.103|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 16:26:02 -0400|visitor|content|/wp-login.php|146.0.73.134|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 16:27:58 -0400|page|content|/is-url-shortening-important|162.244.12.179|live|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Sat, 19 Jul 2014 17:08:44 -0400|visitor|content|/wp-login.php|146.0.73.133|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 17:09:05 -0400|visitor|content|/robots.txt|157.55.39.89|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 17:43:22 -0400|page|content|/is-url-shortening-important|192.200.31.10|live|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Sat, 19 Jul 2014 17:53:19 -0400|visitor|content|/wp-login.php|146.0.74.234|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 17:57:08 -0400|visitor|content|/rss.xml|65.19.138.34|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 18:35:57 -0400|visitor|content|/wp-login.php|146.0.74.234|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 18:38:46 -0400|page|content|/is-url-shortening-important|198.167.138.102|live|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Sat, 19 Jul 2014 18:45:29 -0400|visitor|content|/robots.txt|157.55.39.65|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 19:18:06 -0400|visitor|content|/wp-login.php|195.162.69.58|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 19:55:07 -0400|visitor|content|/robots.txt|208.115.111.66|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 20:00:15 -0400|visitor|content|/wp-login.php|146.0.73.155|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 20:37:30 -0400|visitor|content|/mailbox-app-for-the-iphone|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 20:37:31 -0400|page|content|/mailbox-app-for-the-iphone|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/mailbox-app-for-the-iphone">/mailbox-app-for-the-iphone</a>.
+ERROR|Sat, 19 Jul 2014 20:42:21 -0400|visitor|content|/wp-login.php|195.162.69.58|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 20:47:20 -0400|visitor|content|/robots.txt|217.69.133.30|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 21:16:16 -0400|API|Resource|/library|50.189.72.181|live|Could not find files to load the `photo_credit` plugin.
+ERROR|Sat, 19 Jul 2014 21:21:34 -0400|page|content|/is-url-shortening-important|162.244.10.211|live|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Sat, 19 Jul 2014 21:25:08 -0400|visitor|content|/wp-login.php|146.0.73.156|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 21:35:43 -0400|visitor|content|/rss.xml|208.115.111.66|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 21:44:11 -0400|visitor|content|/robots.txt|66.249.74.103|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 21:44:12 -0400|visitor|content|/rss.xml|66.249.74.103|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 21:46:18 -0400|visitor|content|/mailbox-app-for-the-iphone|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 21:46:18 -0400|page|content|/mailbox-app-for-the-iphone|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/mailbox-app-for-the-iphone">/mailbox-app-for-the-iphone</a>.
+ERROR|Sat, 19 Jul 2014 21:46:33 -0400|visitor|content|/mailbox-app-for-the-iphone|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 21:46:34 -0400|page|content|/mailbox-app-for-the-iphone|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/mailbox-app-for-the-iphone">/mailbox-app-for-the-iphone</a>.
+ERROR|Sat, 19 Jul 2014 21:55:47 -0400|visitor|content|/blogindex.php|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 21:55:47 -0400|page|content|/blogindex.php|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/blogindex.php">/blogindex.php</a>.
+ERROR|Sat, 19 Jul 2014 22:07:25 -0400|visitor|content|/wp-login.php|146.0.78.9|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 22:19:15 -0400|visitor|content|/robots.txt|66.249.79.43|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 22:22:30 -0400|visitor|content|/robots.txt|66.249.74.53|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 22:22:30 -0400|visitor|content|/_hcms/raw-resource?portalId=185303&path=custom/styles/default/hs_default_custom_style.css|66.249.74.246|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 22:22:54 -0400|visitor|content|/robots.txt|199.217.117.32|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 22:22:56 -0400|API|Resource|/library|199.217.117.32|live|Could not find files to load the `photo_credit` plugin.
+ERROR|Sat, 19 Jul 2014 22:23:15 -0400|API|Resource|/blog/internet-explorer-sucks-really-bad|199.217.117.32|live|Could not find files to load the `photo_url` plugin.
+ERROR|Sat, 19 Jul 2014 22:23:15 -0400|API|Resource|/blog/internet-explorer-sucks-really-bad|199.217.117.32|live|Could not find files to load the `photo_url` plugin.
+ERROR|Sat, 19 Jul 2014 22:23:22 -0400|template|parser|/blog/what-is-responsive-and-adaptive-web-design|199.217.117.32|live|Cannot display tag `{{ photo_url }}` because it is a list, not a single value. To display list values, use a tag-pair.
+ERROR|Sat, 19 Jul 2014 22:23:22 -0400|template|parser|/blog/what-is-responsive-and-adaptive-web-design|199.217.117.32|live|Cannot display tag `{{ photo_url }}` because it is a list, not a single value. To display list values, use a tag-pair.
+ERROR|Sat, 19 Jul 2014 22:23:23 -0400|API|Resource|/blog/big-news-from-apple-today|199.217.117.32|live|Could not find files to load the `photo_url` plugin.
+ERROR|Sat, 19 Jul 2014 22:23:23 -0400|API|Resource|/blog/big-news-from-apple-today|199.217.117.32|live|Could not find files to load the `photo_url` plugin.
+ERROR|Sat, 19 Jul 2014 22:23:29 -0400|API|Resource|/blog/a-web-designer-s-best-friend|199.217.117.32|live|Could not find files to load the `photo_url` plugin.
+ERROR|Sat, 19 Jul 2014 22:23:29 -0400|API|Resource|/blog/a-web-designer-s-best-friend|199.217.117.32|live|Could not find files to load the `photo_url` plugin.
+ERROR|Sat, 19 Jul 2014 22:23:31 -0400|API|Resource|/blog/even-microsoft-cant-get-it-right-in-ie|199.217.117.32|live|Could not find files to load the `photo_url` plugin.
+ERROR|Sat, 19 Jul 2014 22:23:31 -0400|API|Resource|/blog/even-microsoft-cant-get-it-right-in-ie|199.217.117.32|live|Could not find files to load the `photo_url` plugin.
+ERROR|Sat, 19 Jul 2014 22:23:34 -0400|API|Resource|/blog/windows-vista-tried-and-oh-so-tragic-2|199.217.117.32|live|Could not find files to load the `photo_url` plugin.
+ERROR|Sat, 19 Jul 2014 22:23:34 -0400|API|Resource|/blog/windows-vista-tried-and-oh-so-tragic-2|199.217.117.32|live|Could not find files to load the `photo_url` plugin.
+ERROR|Sat, 19 Jul 2014 22:25:10 -0400|page|content|/is-url-shortening-important|162.244.10.211|live|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Sat, 19 Jul 2014 22:32:07 -0400|visitor|content|/jobs-the-movie|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 22:32:07 -0400|page|content|/jobs-the-movie|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/jobs-the-movie">/jobs-the-movie</a>.
+ERROR|Sat, 19 Jul 2014 22:32:11 -0400|visitor|content|/jobs-the-movie|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 22:32:11 -0400|page|content|/jobs-the-movie|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/jobs-the-movie">/jobs-the-movie</a>.
+ERROR|Sat, 19 Jul 2014 22:32:34 -0400|visitor|content|/jobs-the-movie|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 22:32:35 -0400|page|content|/jobs-the-movie|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/jobs-the-movie">/jobs-the-movie</a>.
+ERROR|Sat, 19 Jul 2014 22:34:15 -0400|visitor|content|/the-hubspot-cos|157.55.39.65|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 22:49:55 -0400|visitor|content|/wp-login.php|146.0.78.9|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 22:52:18 -0400|visitor|content|/blog/|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 22:52:18 -0400|page|content|/blog/|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/blog/">/blog/</a>.
+ERROR|Sat, 19 Jul 2014 22:57:22 -0400|visitor|content|/blogindex.php|79.114.51.132|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 19 Jul 2014 22:57:23 -0400|page|content|/blogindex.php|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/blogindex.php">/blogindex.php</a>.
+ERROR|Sat, 19 Jul 2014 22:58:12 -0400|page|content|/blogindex.php|79.114.51.132|live|404 - Page not found. There is a bad link on <a href="/blogindex.php">/blogindex.php</a>.
+ERROR|Sat, 19 Jul 2014 23:32:32 -0400|visitor|content|/wp-login.php|146.0.79.23|live|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
