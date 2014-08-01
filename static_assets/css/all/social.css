@@ -1,0 +1,32 @@
+.social-networks {
+  width: 100%;
+  padding-bottom: 4em;
+  background-color: #546268;
+  color: white; }
+  .social-networks h2 {
+    color: white;
+    margin: 0.5em 0; }
+    .social-networks h2:after {
+      border-bottom: 5px solid white; }
+  .social-networks a {
+    color: #c4d8e0; }
+    .social-networks a:hover {
+      color: white;
+      text-decoration: none;
+      border-bottom: 1px dotted #c4d8e0; }
+  .social-networks .social-list {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none; }
+    .social-networks .social-list .network-name {
+      display: block;
+      width: 45%;
+      float: left;
+      text-align: right;
+      padding: 0 2em 0 0; }
+    .social-networks .social-list .social-link {
+      float: left;
+      width: 55%;
+      display: block;
+      text-align: left; }

@@ -1,0 +1,65 @@
+.marquee.blog ul.blog-post-list {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+  .marquee.blog ul.blog-post-list li {
+    width: 100%;
+    line-height: 4;
+    border-bottom: 1px solid whitesmoke; }
+    .marquee.blog ul.blog-post-list li:last-child {
+      border-bottom: 0px; }
+  .marquee.blog ul.blog-post-list .post-title {
+    display: block;
+    width: 70%;
+    float: left; }
+  .marquee.blog ul.blog-post-list .post-date {
+    float: left;
+    width: 30%;
+    display: block;
+    text-align: right; }
+  .marquee.blog ul.blog-post-list .post-body {
+    padding: 0 0 1em 0; }
+    .marquee.blog ul.blog-post-list .post-body img {
+      margin: 2em 0;
+      width: 100%;
+      border: 1px solid #eeeeee; }
+.marquee.blog .blog-post .date {
+  padding: 2em 0 0.5em 0;
+  text-align: center;
+  width: 100%;
+  display: block;
+  color: #e26c6d;
+  font-size: 1.25em; }
+.marquee.blog .blog-post .social-response {
+  padding: 2.5em 0 0 0;
+  border-top: 5px solid #f3f6f7; }
+.marquee .read-more {
+  margin-top: 3em;
+  background-color: #eeeeee;
+  padding: 0 0 4em 0;
+  text-align: center; }
+  .marquee .read-more ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .marquee .read-more.continue {
+    background-color: #f3f6f7;
+    text-align: left;
+    padding: 1em 0 4em; }
+    .marquee .read-more.continue h3 {
+      text-align: left;
+      font-weight: normal;
+      font-size: 18px; }
+    .marquee .read-more.continue .hs-rss-title {
+      font-family: "freight-text-pro", Georgia, Cambria, "Times New Roman", Times, serif;
+      font-size: 1.75em;
+      line-height: 1.75;
+      text-align: left;
+      font-weight: 600; }
+    .marquee .read-more.continue .hs-rss-description {
+      font-family: "freight-text-pro", Georgia, Cambria, "Times New Roman", Times, serif;
+      font-weight: 400;
+      letter-spacing: 0.01rem;
+      font-style: normal;
+      font-size: 19px;
+      line-height: 1.85; }

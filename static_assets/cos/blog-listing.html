@@ -1,0 +1,38 @@
+<div class="blog-section">
+    <div class="blog-listing-wrapper cell-wrapper">
+        <div class="content-container">
+            <ul class="blog-post-list">
+                {% for content in contents %}
+                    <li>
+                        <a href="{{content.absolute_url}}">{{ content.name }}</a>
+                        {% if content.topic_list %}
+                            <!-- span>{% for topic in content.topic_list %}{{ topic.name }}{% endfor %}</span -->
+                        {% endif %}
+                        <span>{% if content.publish_date_local_time %}{{ content.publish_date_local_time.strftime("%B %-d, %Y") }}{% endif %}</span>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+
+        <div class="blog-pagination">
+            <div class="wide-content-container">
+                <div class="row-fluid">
+        			<div class="span4">
+        				{% if last_page_num %}
+        				    <h3><a class="previous-posts-link" href="{{ blog_page_link(last_page_num) }}">< Newer</a></h3>
+        				{% endif %}
+        			</div>
+        			<div class="span4">
+        			    <h3><a class="all-posts-link" href="{{ group.absolute_url }}/all">All posts</a></h3>
+        			</div>
+        			<div class="span4">
+        				{% if next_page_num %}
+        				    <h3><a class="next-posts-link" href="{{ blog_page_link(next_page_num) }}">Older ></a></h3>
+        				{% endif %}
+        			</div>
+        		</div>
+        	</div>
+        </div>
+    </div>
+</div>

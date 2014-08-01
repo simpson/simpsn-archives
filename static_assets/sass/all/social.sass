@@ -1,0 +1,73 @@
+.social-networks
+    width: 100%
+    padding-bottom: 4em
+    background-color: #546068
+    color: #fff
+
+    h2
+        color: #fff
+        margin: .5em 0
+
+        &:after
+            border-bottom: 5px solid #fff
+
+    a
+        color: #c4d8e0
+
+        &:hover
+            color: #FFF
+            text-decoration: none
+            border-bottom: 1px dotted #c4d8e0
+
+    ul.social-list
+        width: 100%
+        margin: 0 auto
+        padding: 0
+        list-style: none
+
+        @include breakpoint(mobile)
+            line-height: 1.35
+
+        li
+            width: 100%
+
+            @include breakpoint(mobile)
+                padding: 0 0 4em 0
+
+        .network-name
+            display: block
+            width: 45%
+            float: left
+            text-align: right
+            padding: 0 2em 0 0
+
+            @include breakpoint(mobile)
+                width: 100%
+                text-align: left
+
+        .social-link
+            float: left
+            width: 55%
+            display: block
+            text-align: left
+
+            @include breakpoint(mobile)
+                width: 100%
+
+.addthis_toolbox
+    top: 72.5%
+    right: 12px
+    background: transparent
+    z-index: 1
+
+    @include breakpoint(mobile)
+        display: none
+
+.shareaholic-canvas
+    position: fixed
+    bottom: 0
+    right: 10px
+    z-index: 1
+        
+    @include breakpoint(mobile)
+        display: none

@@ -1,0 +1,97 @@
+<div class="blog-section">
+    <div class="blog-post-wrapper cell-wrapper">
+                
+        <div class="section post-body">
+            {{ content.post_body }}
+        </div>
+
+        <div class="section post-footer">
+            {% if comments|length %}
+                <div id="comments-listing">
+                    {% for comment in comments %}
+                        <div class="comment">
+                            <div class="comment-from">
+                                {% if comment.user_website %}
+                                    <a href="{{ comment.user_website }}">{{ comment.user_name }}</a>
+                                {% else %}
+                                    {{ comment.user_name }}
+                                {% endif %}
+                            </div>
+                            <div class="comment-body">
+                                {{ comment.comment }}
+                            </div>
+                            <div class="comment-date">
+                                {{ to_local_time(comment.created)|datetimeformat("%B %d, %Y, at %I:%M %p") }}
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+
+            {% if content.are_comments_allowed %}
+            <div id="comment-form">
+                <h4>Add a comment</h4>
+                <form id="blog-comment-form" class="hs-form" action="{{ comment_form_action }}" method="post">
+                    <div class="field hs-form-field">
+                        <label>Name</label>
+                        <div class="input">
+                            <input class="hs-input" id="id_user_name" type="text" name="user_name" maxlength="100" />
+                        </div>
+                    </div>
+
+                    <div class="field hs-form-field">
+                        <label>Email</label>
+                        <div class="input">
+                            <input class="hs-input" type="text" name="user_email" id="id_user_email" />
+                        </div>
+                    </div>
+
+                    <div class="field hs-form-field">
+                        <label>Website</label>
+                        <div class="input">
+                            <input class="hs-input" type="text" name="user_website" id="id_user_url" />
+                        </div>
+                    </div>
+
+                    <div class="field hs-form-field">
+                        <label>Comment</label>
+                        <div class="input">
+                            <textarea class="hs-input" id="id_comment" rows="10" cols="40" name="comment"></textarea>
+                        </div>
+                    </div>
+
+                    {% if content.is_captcha_required %}
+                        <div class="field hs-form-field">
+                            <div id="captcha_wrapper">
+                                <script type="text/javascript">
+                                    var RecaptchaOptions = {
+                                        theme: 'white'
+                                    };
+                                </script>
+                                <script type="text/javascript" src="http://www.google.com/recaptcha/api/challenge?k={{recaptcha_key}}"></script>
+                            </div>
+                        </div>
+                    {% endif %}
+
+                    <div class="field hs-form-field">
+                        <div class="input">
+                            <label for="id_follow_up">
+                                <input id="id_follow_up" type="checkbox" name="follow_up" value="follow_up" />
+                                Subscribe to Follow Up Comments for this Post
+                            </label>
+                        </div>
+                    </div>
+
+                    <input type="hidden" name="parent_id" value="" />
+
+                    <div class="hs_submit">
+                        <div class="actions">
+                            <input id="add-comment-button" type="submit" class="hs-button primary" value="Submit Comment" />
+                        </div>
+                    </div>
+                </form>
+            </div><!-- end comment-form -->
+            {% endif %}
+        </div>
+    </div>
+</div>
