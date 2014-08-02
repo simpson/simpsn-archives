@@ -1,0 +1,7 @@
+ERROR|Sat, 02 Aug 2014 09:08:35 -0400|visitor|content|/docs-assets/ico/favicon.png|::1|dev|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 02 Aug 2014 09:16:01 -0400|visitor|content|/|::1|dev|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 02 Aug 2014 09:16:01 -0400|page|content|/|::1|dev|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Sat, 02 Aug 2014 09:16:03 -0400|visitor|content|/|::1|dev|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 02 Aug 2014 09:16:03 -0400|page|content|/|::1|dev|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Sat, 02 Aug 2014 09:16:05 -0400|page|content|/blog.simpsn.com|::1|dev|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Sat, 02 Aug 2014 09:16:06 -0400|page|content|/blog.simpsn.com|::1|dev|404 - Page not found. There is a bad link on <a href="/blog.simpsn.com">/blog.simpsn.com</a>.

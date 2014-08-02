@@ -18,7 +18,7 @@ _license_key: 19a03946-d60c-4c06-b5a7-902750827930
 _language: en
 
 # Change if you are running Statamic in a subdirectory
-_site_root: /
+_site_root: /blog.simpsn.com/
 
 # Name of your site
 _site_name: David Simpson

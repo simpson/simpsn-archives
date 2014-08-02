@@ -9,13 +9,14 @@ For many, email is the first thing we check when we roll out of bed every mornin
 
 ### The teaser video
 
-<div class="videoWrapper"><iframe src="http://player.vimeo.com/video/54553882?title=0&byline=0&portrait=0&color=cccccc&api=1&player_id=orchvid" width="400" height="300" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+<div class="videoWrapper"><iframe src="http://player.vimeo.com/video/54553882?title=0&byline=0&portrait=0&color=cccccc&api=1&player_id=orchvid" width="400" height="300" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+
 ### The Quest for Inbox Zero
 
 Everyone has their own process for how they try to stay on top of their email, but in the end we all have a common goal, to keep up with the never ending stream of new messages. If we think back just 10-15 years ago, most people were just getting used to email and most emailing was done sitting at a desktop. Fast forward back to today and contrast that with how connected we are now: iPhones, tablets, netbooks, laptops, desktops, 3G, 4G, LTE...... Needless to say we are now hardwired in to a digital world, no wonder why it is difficult to keep up. Gentry Underwood, CEO of Orchestra, the company behind Mailbox, in regard to mobile email usage says quote:
 
-<blockquote>"The big a-ha was discovering that the primary-use case of email on the phone was really triage," he explains. "It’s taking those couple of minutes that you have to go through your mail and trying to look at what’s new that you need to worry about--and what you don’t need to worry about."</blockquote>
-<div class="content blog">
+> "The big a-ha was discovering that the primary-use case of email on the phone was really triage," he explains. "It’s taking those couple of minutes that you have to go through your mail and trying to look at what’s new that you need to worry about--and what you don’t need to worry about."
+
 This is the primary problem that Mailbox is trying to solve. How? Quickly archive emails you’ve finished reading, hit snooze and set reminders for emails you want to put off for later, and build email lists based on any criteria you choose.
 
 ### The Design & User Experience

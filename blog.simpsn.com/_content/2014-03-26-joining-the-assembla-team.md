@@ -1,6 +1,7 @@
 ---
 title: "I'm Joining the Assembla Team"
 photo_url: http://cdn2.hubspot.net/hub/185303/file-609908469-jpg/images/marquee/assembla-home.jpg
+photo_credit: none
 ---
 ### It has been far too long since my last post, you'll learn why below. This year i'm going to do a much better job of documenting my thoughts on designing and developing user experiences to share with others.
 

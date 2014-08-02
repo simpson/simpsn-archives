@@ -5,7 +5,7 @@ RewriteEngine On
 
 # If you're running in a subfolder (like http://example.com/statamic),
 # add that here. E.g. /statamic/
-RewriteBase /
+RewriteBase /blog.simpsn.com/
 Options -Indexes
 # Protect your system files from prying eyes
 RewriteRule ^(_app) - [F,L]
